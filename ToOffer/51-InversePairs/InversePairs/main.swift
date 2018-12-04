@@ -8,6 +8,8 @@
 
 import Foundation
 
+// 使用合并排序
+
 func merge(_ nums: inout Array<Int>, start: Int, middle: Int, end: Int) -> Int {
     var temps = Array<Int>()
     

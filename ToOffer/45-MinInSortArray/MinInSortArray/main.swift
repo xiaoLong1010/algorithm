@@ -32,6 +32,7 @@ func partition(_ nums: inout Array<Int>, left: Int, right: Int) -> Int {
     var left = left
     var right = right
     
+    // 取最右边的数放到中间
     let middleData = nums[right]
     
     while left < right {
@@ -55,7 +56,7 @@ func partition(_ nums: inout Array<Int>, left: Int, right: Int) -> Int {
     return right
 }
 
-
+// 定义比较大小的规则
 func bigger(_ num1: Int, _ num2: Int) -> Bool {
     let numStr1 = "\(num1)\(num2)"
     let numStr2 = "\(num2)\(num1)"
