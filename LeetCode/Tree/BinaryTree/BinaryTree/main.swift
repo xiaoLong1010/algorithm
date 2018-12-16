@@ -294,5 +294,54 @@ func lowestCommonAncestor_236(_ root: BinaryTreeNode?, _ node1: BinaryTreeNode?,
     }
     else {
         return left
+        
+    }
+}
+
+// 非递归前序遍历1
+func preOrderNR1(_ root: BinaryTreeNode?) -> Void {
+    guard root != nil else {
+        return
+    }
+    
+    var stack = Stack<BinaryTreeNode>()
+    stack.push(root!)
+    
+    // 根据栈的特点，先push右边，再左边
+    // 出栈的时候就是先左边，再右边
+    while !stack.isEmpty() {
+        let node = stack.pop()
+        print(node!.value)
+        
+        if let right = node?.right {
+            stack.push(right)
+        }
+        
+        if let left = node?.left {
+            stack.push(left)
+        }
+    }
+}
+
+// 非递归前序遍历2
+func preOrderNR2(_ root: BinaryTreeNode?) -> Void {
+    guard root != nil else {
+        return
+    }
+    
+    var node = root
+    var stack = Stack<BinaryTreeNode>()
+    
+    // 先把所有的子树的root都push进去
+    // 再依次访问左右
+    while node != nil || !stack.isEmpty() {
+        if node != nil {
+            print(node!.value)
+            stack.push(node!)
+            node = node?.left
+        }
+        else {
+            node = stack.pop()?.right
+        }
     }
 }
