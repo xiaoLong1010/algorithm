@@ -272,3 +272,27 @@ func numOfNodes_222(_ root: BinaryTreeNode?) -> Int {
         return 1 + numOfNodes_222(root?.left) + numOfNodes_222(root?.right)
     }
 }
+// 236 普通二叉树，最近的公共祖先
+func lowestCommonAncestor_236(_ root: BinaryTreeNode?, _ node1: BinaryTreeNode?, _ node2: BinaryTreeNode?) -> BinaryTreeNode? {
+    if root == nil {
+        return nil
+    }
+    if root === node1 || root === node2 {
+        return root
+    }
+    
+    // 递归搜索左右子树
+    let left = lowestCommonAncestor_236(root?.left, node1, node2)
+    let right = lowestCommonAncestor_236(root?.right, node1, node2)
+    
+    // 左右都不为空
+    if left != nil && right != nil {
+        return root
+    }
+    else if left == nil {
+        return right
+    }
+    else {
+        return left
+    }
+}

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 /**
  应用
     最大值，最小值
@@ -24,8 +25,28 @@ import Foundation
     删除的节点是否需要返回
  108 将有序数组，转换为平衡的二分搜索树
  230 二叉搜索树的第K大元素
- 
  */
+
+func lowestCommonAncestor_235(_ root: BinaryTreeNode?, _ node1: BinaryTreeNode?, _ node2: BinaryTreeNode?) -> BinaryTreeNode? {
+    if !(root != nil && node1 != nil && node2 != nil) {
+        return nil
+    }
+    let value1 = node1!.value
+    let value2 = node2!.value
+    let rootValue = root!.value
+    
+    // 两个结点小于root，那公共结点就在左边
+    if rootValue > value1 && rootValue > value2  {
+        return lowestCommonAncestor_235(root?.left, node1, node2)
+    }
+    
+    // 两个结点大于root，那公共结点就再右边
+    if rootValue < value1 && rootValue < value2  {
+        return lowestCommonAncestor_235(root?.right, node1, node2)
+    }
+    
+    return root
+}
 
 
 
