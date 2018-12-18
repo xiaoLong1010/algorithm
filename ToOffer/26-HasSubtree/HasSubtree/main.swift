@@ -24,11 +24,13 @@ func hasSubtree(_ root1: BinaryTreeNode?, _ root2: BinaryTreeNode?) -> Bool {
     var result = false
     
     if root1 != nil && root2 != nil {
+        // 从该node开始，是否和root2相同
         result = tree(fromNode: root1, hasSub: root2);
         
+        // 
         if !result {
-            result = tree(fromNode: root1?.left, hasSub: root2) ||
-                     tree(fromNode: root1?.right, hasSub: root2)
+            result = hasSubtree(root1?.left, root2) ||
+                     hasSubtree(root1?.right, root2)
         }
     }
     
