@@ -36,7 +36,7 @@ class Combinations {
         
         // 下一次从index+1开始，之前都不能要
         // 还有k - subCombina.count()个空位, 所以, [i...n] 中至少要有这么多个元素
-        // index最大值 n - left + 1
+        // maxStart最大值 n - left + 1
         let left = k - subCombina.count
         let maxStart = num - left + 1
         for index in start...maxStart {

@@ -42,7 +42,23 @@ import Foundation
 //let perm = Permutations()
 //print(perm.permute([1,2,3]))
 
-let comb = Combinations()
-print(comb.combina(4, 2))
+//let comb = Combinations()
+//print(comb.combina(4, 2))
+
+func test79_WordSearch() -> Void {
+    let search = WordSearch()
+    let one: [Character] = ["a","b","t","g"]
+    let two: [Character] = ["c","f","c","s"]
+    let three: [Character] = ["j","d","e","h"]
+    let board = [
+        one,
+        two,
+        three
+    ]
+
+    print(search.exist(board, "bfce"))
+    print(search.exist(board, "abfb"))
+}
+test79_WordSearch()
 
 
