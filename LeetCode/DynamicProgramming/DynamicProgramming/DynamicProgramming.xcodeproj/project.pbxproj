@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		20047EF721D1F77200EF4014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EF621D1F77200EF4014 /* main.swift */; };
 		20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */; };
+		203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632621D318100050A577 /* 198-HouseRobber.swift */; };
+		203D632921D324CF0050A577 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632821D324CF0050A577 /* Knapsack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		20047EF321D1F77200EF4014 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		20047EF621D1F77200EF4014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "343-IntegerBreak.swift"; sourceTree = "<group>"; };
+		203D632621D318100050A577 /* 198-HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "198-HouseRobber.swift"; sourceTree = "<group>"; };
+		203D632821D324CF0050A577 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				20047EF621D1F77200EF4014 /* main.swift */,
 				20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */,
+				203D632621D318100050A577 /* 198-HouseRobber.swift */,
+				203D632821D324CF0050A577 /* Knapsack.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20047EF721D1F77200EF4014 /* main.swift in Sources */,
+				203D632921D324CF0050A577 /* Knapsack.swift in Sources */,
+				203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */,
 				20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

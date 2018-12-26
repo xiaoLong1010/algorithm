@@ -8,6 +8,34 @@
 
 import Foundation
 
+func testKnapsack() -> Void {
+    let sack  = Knapsack()
+    let values = [6,10,12]
+    let weights = [1,2,3]
+
+    let result1 = sack.solution1(values: values, weights: weights, maxCapacity: 5)
+    print("result1 :" ,result1)
+    
+    let result2 = sack.solution2(values: values, weights: weights, maxCapacity: 5)
+    print("result2 :" ,result2)
+}
+testKnapsack()
+
+func testHouseRobber198() -> Void {
+    let robber  = HouseRobber()
+    let nums = [2,7,9,3,1]
+    
+    let result1 = robber.solution1(nums)
+    print("result1 :" ,result1)
+    
+    let result2 = robber.solution2(nums)
+    print("result2 :" ,result2)
+    
+    let result3 = robber.solution3(nums)
+    print("result3 :" ,result3)
+}
+//testHouseRobber198()
+
 func testIntegerBreak343() -> Void {
     let breaker  = IntegerBreak()
     
@@ -20,7 +48,7 @@ func testIntegerBreak343() -> Void {
     let result3 = breaker.solution3(10)
     print("result3 :" ,result3)
 }
-testIntegerBreak343()
+//testIntegerBreak343()
 
 // f(n) = f(n-1) + f(n-2)
 func Fibonacci(_ num: Int) -> Int {
