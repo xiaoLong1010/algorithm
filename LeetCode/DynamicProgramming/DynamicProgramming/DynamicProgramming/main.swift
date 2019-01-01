@@ -8,6 +8,44 @@
 
 import Foundation
 
+func testLCS() -> Void {
+    let lcs  = LongestCommonSubsequence()
+    var str1 = "23"
+    var str2 = "1234"
+
+    var result1 = lcs.solution1(str1, str2)
+    print("result1 :" ,result1)
+    var result2 = lcs.solution2(str1, str2)
+    print("result2 :" ,result2)
+    
+    str1 = "ABCDGH"
+    str2 = "AEDFHR"
+    result1 = lcs.solution1(str1, str2)
+    print("result1 :" ,result1)
+    result2 = lcs.solution2(str1, str2)
+    print("result2 :" ,result2)
+    
+    str1 = "AAACCGTGAGTTATTCGTTCTAGAA"
+    str2 = "CACCCCTAAGGTACCTTTGGTTC"
+    result1 = lcs.solution1(str1, str2)
+    print("result1 :" ,result1)
+    result2 = lcs.solution2(str1, str2)
+    print("result2 :" ,result2)
+}
+testLCS()
+
+func testLIS() -> Void {
+    let lis  = LongestIncreaseSubsequence()
+    let nums = [1, 3, 6, 7, 9, 4, 10, 5, 6]
+    
+    let result1 = lis.solution1(nums)
+    print("result1 :" ,result1)
+    
+    let result2 = lis.solution2(nums)
+    print("result2 :" ,result2)
+}
+//testLIS()
+
 func testKnapsack() -> Void {
     let sack  = Knapsack()
     let values = [6,10,12]
@@ -19,7 +57,7 @@ func testKnapsack() -> Void {
     let result2 = sack.solution2(values: values, weights: weights, maxCapacity: 5)
     print("result2 :" ,result2)
 }
-testKnapsack()
+//testKnapsack()
 
 func testHouseRobber198() -> Void {
     let robber  = HouseRobber()
