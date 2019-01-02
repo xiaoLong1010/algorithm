@@ -8,6 +8,13 @@
 
 import Foundation
 
+func testLPS() -> Void {
+    let lps = LongestPalindromicSubstring()
+    let result1 = lps.solution1("abbacdeedc")
+    print(result1)
+}
+testLPS()
+
 func testLCS() -> Void {
     let lcs  = LongestCommonSubsequence()
     var str1 = "23"
@@ -32,7 +39,7 @@ func testLCS() -> Void {
     result2 = lcs.solution2(str1, str2)
     print("result2 :" ,result2)
 }
-testLCS()
+//testLCS()
 
 func testLIS() -> Void {
     let lis  = LongestIncreaseSubsequence()

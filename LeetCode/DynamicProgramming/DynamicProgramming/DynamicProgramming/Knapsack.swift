@@ -8,7 +8,7 @@
 
 import Foundation
 
-// dp[i][j],前i件物品，体积不超过j的最大value
+// dp[i][j],前i件物品，体积不超过j情况下的最大value
 // dp[i][j] = max(dp[i-1][j],v[i]+dp[i-1][j-w[i]])
 class Knapsack {
     var history = Array<Array<Int>>()

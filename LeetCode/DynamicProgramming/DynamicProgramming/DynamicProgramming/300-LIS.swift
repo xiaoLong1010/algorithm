@@ -11,6 +11,7 @@ import Foundation
 class LongestIncreaseSubsequence {
     
     // 动态规划.dp[i]表示以i结尾的最长递增子序列长度
+    // dp
     func solution1(_ nums: Array<Int>) -> Int {
         let length = nums.count
         if length == 0 {
@@ -41,7 +42,7 @@ class LongestIncreaseSubsequence {
         return maxNum
     }
     
-    // dp[i]表示长度i+1的子序列，长度i+1的子序列有多个，对应的值表示这些子序列中最后一个数字的最小值
+    // dp[i]表示长度i+1的子序列，对应的值表示这些子序列中最后一个数字的最小值,长度i+1的子序列有多个
     func solution2(_ nums: Array<Int>) -> Int {
         let length = nums.count
         if length == 0 {

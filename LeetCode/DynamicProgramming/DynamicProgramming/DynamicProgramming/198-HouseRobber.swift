@@ -8,6 +8,14 @@
 
 import Foundation
 
+/**
+ 题目描述：抢劫一排住户，但是不能抢邻近的住户，求最大抢劫量。
+ 
+ 定义 dp 数组用来存储最大的抢劫量，其中 dp[i] 表示抢到第 i 个住户时的最大抢劫量。
+ 
+ 由于不能抢劫邻近住户，如果抢劫了第 i -1 个住户，那么就不能再抢劫第 i 个住户，所以
+ 
+ */
 // dp(i) = max(num[i]+dp(i-2),dp(i-1))
 class HouseRobber {
     private var historyList = Array<Int>()
