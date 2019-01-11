@@ -8,11 +8,19 @@
 
 import Foundation
 
+func test18_FourSum() -> Void {
+    let answer = FourSum()
+    
+    let result = answer.solution1([1, 0, -1, 0, -2, 2],0)
+    print(result)
+}
+test18_FourSum()
+
 func test15_ThreeSum() -> Void {
     let answer = ThreeSum()
     
     let result = answer.solution1([-1, 0, 1, 2, -1, -4])
     print(result)
 }
-test15_ThreeSum()
+//test15_ThreeSum()
 
