@@ -11,7 +11,7 @@ import Foundation
 /**
   dp[i][j] 表示S1的前 i 个字符与S2的前j个字符最长公共子序列的长度
   dp[i][j] = dp[i-1][j-1] + 1,当 S1i==S2j 时
-  dp[i][j] = max{ dp[i-1][j], dp[i][j-1] }
+  dp[i][j] = max{ dp[i-1][j], dp[i][j-1] },当 S1i!=S2j 时
  */
 class  LongestCommonSubsequence {
     func solution1(_ str1: String, _ str2: String) -> Int {
@@ -89,6 +89,60 @@ class  LongestCommonSubsequence {
     
         return dp[length1 - 1][length2 - 1]
     }
-    
-   
+}
+
+/**
+ dp[i][j] 表示S1的前 i 个字符与S2的前j个字符最长公共子序列的长度
+ dp[i][j] = dp[i-1][j-1] + 1,当 S1i==S2j 时
+ dp[i][j] = 0,当 S1i!=S2j 时
+ */
+class LongestCommonSubString {
+    func solution1(_ str1: String, _ str2: String) -> [String] {
+        let length1 = str1.count
+        let length2 = str2.count
+        
+        if length1 == 0 || length2 == 0 {
+            return []
+        }
+        
+        // 初始化保存的数组，长度都用length+1，下面的计算就不用考虑边界条件了
+        let oneRow = Array(repeating: 0, count: length2+1)
+        var dp = Array(repeating: oneRow, count: length1+1)
+        
+        var maxLength = 0
+        for i in 1...(length1) {
+            let iIndex = str1.index(str1.startIndex, offsetBy: i-1)
+            for j in 1...(length2) {
+                let jIndex = str2.index(str2.startIndex, offsetBy: j-1)
+                
+                // 先计算str1[i]，str2[j]
+                let iValue = str1[iIndex]
+                let jValue = str2[jIndex]
+                
+                if iValue == jValue {
+                    dp[i][j] = dp[i-1][j-1] + 1
+                    if dp[i][j] > maxLength {
+                        maxLength = dp[i][j]
+                    }
+                } else {
+                    dp[i][j] = 0
+                }
+            }
+        }
+        
+        // 根据maxLength和dp[i][j]，求出具体的字符串
+        var result = [String]()
+        for i in 1...(length1) {
+            let iIndex = str1.index(str1.startIndex, offsetBy: i-1)
+            for j in 1...(length2) {
+                
+                if dp[i][j] == maxLength {
+                    let subStr = str1[str1.index(iIndex, offsetBy: -(maxLength-1))...iIndex]
+                    result.append(String(subStr))
+                }
+            }
+        }
+        
+        return result
+    }
 }
