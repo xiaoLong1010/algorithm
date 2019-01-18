@@ -8,13 +8,21 @@
 
 import Foundation
 
+func test219_ContainsNearbyDuplicate() -> Void {
+    let answer = ContainsNearbyDuplicate()
+    
+    let result = answer.solution2([1,0,1,1],1)
+    print(result)
+}
+test219_ContainsNearbyDuplicate()
+
 func test447_numOfBoomerangs() -> Void {
     let answer = NumOfBoomerangs()
     
     let result = answer.solution1([[0,0],[1,0],[2,0]])
     print(result)
 }
-test447_numOfBoomerangs()
+//test447_numOfBoomerangs()
 
 func test18_FourSum() -> Void {
     let answer = FourSum()
