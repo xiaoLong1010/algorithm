@@ -79,6 +79,7 @@ class LongestSubstring {
             // 则左索引需要向右移动，减少窗口。需要先把左索引对应的字符删掉
             let addChar = chars[right+1]
             if used[addChar] != nil {
+                // 由于没有right+1，会不断把left向右移
                 used.removeValue(forKey: chars[left])
                 if left < right {
                     left += 1
@@ -141,21 +142,21 @@ class LongestSubstring {
         }
         
         var left = 0
-        var right = 1
-        var i = 0
-        var result = 0
-        result = right - left
+        var right = 0
+        var result = right - left + 1
         
-        let chars = Array.init(s.utf8)
+        let chars = Array(s)
         
         while right < chars.count
         {
-            i = left
+            // [left,right)区间，是否有和chars[right]相同的字符
+            // 如果有的话，left = i + 1
+            var i = left
             while i < right
             {
                 if chars[i] == chars[right]
                 {
-                    left = i+1
+                    left = i + 1
                     break;
                 }
                 i += 1
@@ -164,6 +165,45 @@ class LongestSubstring {
             right += 1
         }
 
+        return result
+    }
+    
+    // 动态规划
+    // dp[i]表示以下标为i的字符结尾不包含重复字符的最长子字符串长度,子字符串是包含最后一个字符的
+    //
+    func solution5(_ s: String) -> Int {
+        guard s.count > 0 else {
+            return 0
+        }
+        
+        // 字符串变成数组，便于计算length
+        let chars = Array(s)
+        let length = chars.count
+        var result = 1
+        
+        var dp = Array(repeating: 1, count: length)
+        
+        for dpIndex in 1..<length {
+            // dpIndex相当于以preMaxIndex结尾的子字符串长度
+            // [preMinIndex, preMaxIndex]就相当于以preMaxIndex结尾的最长不重复子字符串
+            let preMaxIndex = dpIndex - 1
+            let preMinIndex  = dpIndex - dp[preMaxIndex]
+            
+            // 倒序从[preMinIndex, preMaxIndex]查找，看是否有和dpIndex相同的字符
+            var i = preMaxIndex
+            while i >= preMinIndex {
+                if chars[dpIndex] == chars[i] {
+                    break
+                }
+                i -= 1
+            }
+            
+            dp[dpIndex] = dpIndex - i
+            
+            if dp[dpIndex] > result {
+                result = dp[dpIndex]
+            }
+        }
         return result
     }
 }
