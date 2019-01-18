@@ -10,7 +10,7 @@ import Foundation
 
 func test3_LongestSubstring() -> Void {
     let answer = LongestSubstring()
-    let result = answer.solution4("bbbb")
+    let result = answer.solution2("abcdcab")
     print("result:", result)
 }
 test3_LongestSubstring()
