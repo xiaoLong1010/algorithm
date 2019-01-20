@@ -25,16 +25,17 @@ func reverseList(_ head: ListNode?) -> ListNode? {
     
     var pre: ListNode? = nil
     var cur: ListNode? = head
-    var post: ListNode? = head?.next
     
     while cur != nil {
+        // 先保留下一个结点的信息
+        let post = cur?.next
+        
         // 当前结点的next指针进行反转
         cur?.next = pre
         
-        // 三个结点向右走一步
+        // 结点向右走一步
         pre = cur
         cur = post
-        post = post?.next
     }
     return pre
 }
