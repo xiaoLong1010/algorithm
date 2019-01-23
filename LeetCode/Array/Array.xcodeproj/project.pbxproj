@@ -11,6 +11,7 @@
 		2017F90121E2AF1F00C7AFB3 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017F90021E2AF1F00C7AFB3 /* ArrayTests.swift */; };
 		2017F90921E2B76F00C7AFB3 /* 209-MinSubArrayLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017F90821E2B76F00C7AFB3 /* 209-MinSubArrayLength.swift */; };
 		2017F90B21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017F90A21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift */; };
+		20399D1421F81CEC00E98B7A /* 169-MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D1321F81CEC00E98B7A /* 169-MajorityElement.swift */; };
 		20E523CF21E1ED1D0057EC76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523CE21E1ED1D0057EC76 /* main.swift */; };
 		20E523D621E1EDC40057EC76 /* 283-MoveZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523D521E1EDC40057EC76 /* 283-MoveZeros.swift */; };
 		20E523D821E1F5A00057EC76 /* 27-RemoveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523D721E1F5A00057EC76 /* 27-RemoveElement.swift */; };
@@ -46,6 +47,7 @@
 		2017F90221E2AF1F00C7AFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2017F90821E2B76F00C7AFB3 /* 209-MinSubArrayLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "209-MinSubArrayLength.swift"; sourceTree = "<group>"; };
 		2017F90A21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-LongestSubstring.swift"; sourceTree = "<group>"; };
+		20399D1321F81CEC00E98B7A /* 169-MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "169-MajorityElement.swift"; sourceTree = "<group>"; };
 		20E523CB21E1ED1D0057EC76 /* Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Array; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E523CE21E1ED1D0057EC76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20E523D521E1EDC40057EC76 /* 283-MoveZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "283-MoveZeros.swift"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				2017F8F821E2ACE900C7AFB3 /* 167-TwoSum2.swift */,
 				2017F90821E2B76F00C7AFB3 /* 209-MinSubArrayLength.swift */,
 				2017F90A21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift */,
+				20399D1321F81CEC00E98B7A /* 169-MajorityElement.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				2017F90B21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift in Sources */,
 				2017F8F921E2ACE900C7AFB3 /* 167-TwoSum2.swift in Sources */,
+				20399D1421F81CEC00E98B7A /* 169-MajorityElement.swift in Sources */,
 				20E523D621E1EDC40057EC76 /* 283-MoveZeros.swift in Sources */,
 				20E523DA21E204010057EC76 /* 75-SortColors.swift in Sources */,
 				20E523D821E1F5A00057EC76 /* 27-RemoveElement.swift in Sources */,
