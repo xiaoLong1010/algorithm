@@ -10,6 +10,7 @@
  */
 import Foundation
 class MoveZeros {
+    
     func solution1(_ nums: inout Array<Int>) -> Void {
         var k = 0   // [0...k)的元素都不是0
         
@@ -31,5 +32,28 @@ class MoveZeros {
         let temp = nums[index1]
         nums[index1] = nums[index2]
         nums[index2] = temp
+    }
+
+    func solution2(_ nums: inout Array<Int>) -> Void {
+        if nums.count <= 1 {
+            return;
+        }
+        var zeroIndexs = Array<Int>()
+        var count = 0;  // 值为0的数，在zeroIndexs的起点
+        for i in 0..<nums.count {
+            let val = nums[i]
+            
+            if val == 0 {
+                zeroIndexs.append(i)
+            } else {
+                if zeroIndexs.count > 0 {
+                    let zeroIndex = zeroIndexs[count]
+                    nums[zeroIndex] = nums[i]
+                    nums[i] = 0
+                    zeroIndexs.append(i);
+                    count += 1
+                }
+            }
+        }
     }
 }
