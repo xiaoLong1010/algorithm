@@ -8,12 +8,28 @@
 
 import Foundation
 
+func test215() -> Void {
+    let answer = FindKthLargest()
+    let nums = [3,2,3,1,2,4,5,5,6]
+    let result = answer.solution1(nums,4)
+    print("result:", result)
+}
+test215()
+
+func test26_RemoveDuplicates() -> Void {
+    let answer = RemoveDuplicates()
+    var nums = [1,1,2]
+    let result = answer.solution1(&nums)
+    print("result:", result)
+}
+//test26_RemoveDuplicates()
+
 func test3_LongestSubstring() -> Void {
     let answer = LongestSubstring()
     let result = answer.solution2("abcdcab")
     print("result:", result)
 }
-test3_LongestSubstring()
+//test3_LongestSubstring()
 
 func test209_MinSubArrayLength() -> Void {
     let answer = MinSubArrayLength()
@@ -42,7 +58,7 @@ func test283_MoveZeros() -> Void {
     let answer = MoveZeros()
     
     var nums = [0, 1, 0, 3, 12]
-    answer.solution1(&nums)
+    answer.solution2(&nums)
     print("nums: ",nums)
 }
 //test283_MoveZeros()

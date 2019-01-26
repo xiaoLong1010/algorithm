@@ -13,31 +13,6 @@
 import Foundation
 
 class SortColors {
-    func solution1(_ nums: inout [Int]) -> Void {
-        var zeroIndex = -1  // [0...zeroIndex]都是0
-        var twoIndex = nums.count   // [twoIndex...length-1]都是2
-        
-        var index = 0
-        while index < twoIndex {
-            let num = nums[index]
-            
-            if num == 1 {
-                index = index + 1
-            } else if num == 2 {
-                twoIndex = twoIndex - 1
-                if index != twoIndex {
-                    self.swap(&nums, index, twoIndex)
-                }
-            } else {
-                zeroIndex = zeroIndex + 1
-                if zeroIndex != index {
-                    self.swap(&nums, zeroIndex, index)
-                }
-                index = index + 1
-            }
-        }
-    }
-    
     func solution2(_ nums: inout [Int]) -> Void {
         var zeroIndex = -1  // [0...zeroIndex]都是0
         var twoIndex = nums.count   // [twoIndex...length-1]都是2
@@ -57,6 +32,31 @@ class SortColors {
                 zeroIndex = zeroIndex + 1
                 if zeroIndex != index {
                     (nums[index],nums[zeroIndex]) = (nums[zeroIndex], nums[index])
+                }
+                index = index + 1
+            }
+        }
+    }
+    
+    func solution1(_ nums: inout [Int]) -> Void {
+        var zeroIndex = -1  // [0...zeroIndex]都是0
+        var twoIndex = nums.count   // [twoIndex...length-1]都是2
+        
+        var index = 0
+        while index < twoIndex {
+            let num = nums[index]
+            
+            if num == 1 {
+                index = index + 1
+            } else if num == 2 {
+                twoIndex = twoIndex - 1
+                if index != twoIndex {
+                    self.swap(&nums, index, twoIndex)
+                }
+            } else {
+                zeroIndex = zeroIndex + 1
+                if zeroIndex != index {
+                    self.swap(&nums, zeroIndex, index)
                 }
                 index = index + 1
             }
