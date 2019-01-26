@@ -147,21 +147,53 @@ func bubbleSort(_ nums: inout Array<Int>) -> Void {
     }
 }
 
-func quickSort(_ nums: inout Array<Int>, start: Int, end: Int) -> Void {
+func bubbleSort2(_ nums: inout Array<Int>) -> Void {
+    let length = nums.count
+    
+    // 从最大索引到最小索引方向进行冒泡
+    for i in 0..<length-1 {     // i表示最终冒泡结果要放的位置
+        var hasExchange = false
+        for j in (i+1...length-1).reversed() {       // 需要冒泡比较的序列
+            // 右边小于左边，就需要交换
+            if nums[j] < nums[j-1] {
+                let temp = nums[j]
+                nums[j] = nums[j-1]
+                nums[j-1] = temp
+                
+                hasExchange = true
+            }
+        }
+        // 如果没有进行交换了，就说明已经有序了
+        if !hasExchange {
+            return
+        }
+    }
+}
+
+func quickSort(_ nums: inout Array<Int>) -> Void {
+    _quickSort(&nums, start: 0, end: nums.count-1)
+}
+
+func _quickSort(_ nums: inout Array<Int>, start: Int, end: Int) -> Void {
     if start >= end {
         return
     }
     
-    let index = partion(&nums, start: start, end: end)
-    quickSort(&nums, start: start, end: index-1)
-    quickSort(&nums, start: index+1, end: end)
+    let index = _partion(&nums, start: start, end: end)
+    _quickSort(&nums, start: start, end: index-1)
+    _quickSort(&nums, start: index+1, end: end)
 }
 
-func partion(_ nums: inout Array<Int>, start: Int, end: Int) -> Int {
+func _partion(_ nums: inout Array<Int>, start: Int, end: Int) -> Int {
     var left = start
     var right = end
+    
+    //随机选， 对于近似排序的数组，防止时间复杂度退化
+    let randonIndex = Int.random(in: 0...right-left) + start
+    (nums[randonIndex],nums[right]) = (nums[right],nums[randonIndex])
     let middleValue = nums[right]
     
+    // 双指针，对于重复元素很多的数据，防止时间复杂度退化
     while left < right {
         // 找到较大的数，放到右边
         while (left < right) && nums[left] < middleValue {
@@ -185,10 +217,43 @@ func mergeSort(_ nums: inout Array<Int>, low: Int, high: Int) -> Void {
         return
     }
     
+    // 如果需要排序的区间比较小，那很有可能该区间是近似有序的，此时可以用插入排序
+//    if high - low >= 15 {
+//        insertSort(&nums)
+//        return
+//    }
+    
     let middle = low + (high - low) / 2
     mergeSort(&nums, low: low, high: middle)
     mergeSort(&nums, low: middle+1, high: high)
-    merge2(&nums, low: low, middle: middle, high: high)
+    
+    // 小优化
+    if nums[middle] > nums[middle + 1] {
+        merge2(&nums, low: low, middle: middle, high: high)
+    }
+    
+}
+
+// 自底向上
+func mergeSort2(_ nums: inout Array<Int>) -> Void {
+    let length = nums.count
+    
+    // size表示区间的大小，每次要合并两个区间
+    var size = 1
+    while size <= length {
+        
+        var i = 0
+        while i < length - size {
+            // 对[i, i+sz-1] 和[i+sz, i+2*sz-1]进行合并
+            
+            if nums[i+size-1] > nums[i+size] {
+                merge2(&nums, low: i, middle: i+size-1, high: min(i+2*size-1, length-1))
+            }
+            i += (size + size)
+        }
+        
+        size += size
+    }
 }
 
 func merge(_ nums: inout Array<Int>, low: Int, middle: Int, high: Int) -> Void {
@@ -265,7 +330,8 @@ func merge2(_ nums: inout Array<Int>, low: Int, middle: Int, high: Int) -> Void 
 }
 
 var nums = [23,1,3,12,2,8,4]
-mergeSort(&nums, low: 0, high: nums.count-1)
+quickSort(&nums)
+//mergeSort(&nums, low: 0, high: nums.count-1)
 //nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 //heapSort(&nums)
 print(nums)
