@@ -8,13 +8,21 @@
 
 import Foundation
 
+func test125() -> Void {
+    let answer = IsPalindrome()
+//    let nums = [3,2,3,1,2,4,5,5,6]
+    let result = answer.solution1("ab2a")
+    print("result:", result)
+}
+test125()
+
 func test215() -> Void {
     let answer = FindKthLargest()
     let nums = [3,2,3,1,2,4,5,5,6]
     let result = answer.solution1(nums,4)
     print("result:", result)
 }
-test215()
+//test215()
 
 func test26_RemoveDuplicates() -> Void {
     let answer = RemoveDuplicates()
