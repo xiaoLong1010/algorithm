@@ -110,12 +110,12 @@ class FindKthLargest {
         var left = low+1
         var right = high
         while true {
-            // 找出左边，小于middleData的数字，然后将其放到右边
+            // 找出左边，小于middleData的数字
             while left <= right && nums[left] > middleData {
                 left += 1
             }
             
-            // 找出右边，大于middleData的数字，然后将其放到左边
+            // 找出右边，大于middleData的数字
             while right >= left+1 && nums[right] < middleData {
                 right -= 1
             }
