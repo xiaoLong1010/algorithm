@@ -54,11 +54,12 @@ func swap(_ nums: inout Array<Int>, _ i: Int, _ j: Int) {
 func adjustHeap(_ nums: inout Array<Int>, subRootIndex: Int, length: Int) -> Void {
     
     let initRootValue = nums[subRootIndex]
-    var topIndex = subRootIndex
+    var targetIndex = subRootIndex
     
-    while 2 * topIndex + 1 < length {
+    // 保证至少有左子节点
+    while 2 * targetIndex + 1 < length {
         // left = 2 * root + 1,表示root的左子节点下标
-        let leftIndex = 2 * topIndex + 1
+        let leftIndex = 2 * targetIndex + 1
         let leftValue = nums[leftIndex]
         
         // 左 右子节点的最大值
@@ -76,12 +77,12 @@ func adjustHeap(_ nums: inout Array<Int>, subRootIndex: Int, length: Int) -> Voi
             break
         }
         
-        nums[topIndex] = biggerValue
+        nums[targetIndex] = biggerValue
         
         // 从下面开始找
-        topIndex = biggerIndex
+        targetIndex = biggerIndex
     }
-    nums[topIndex] = initRootValue
+    nums[targetIndex] = initRootValue
 }
 
 //左边是有序的，取右边第一个num，在左边找到合适的位置
