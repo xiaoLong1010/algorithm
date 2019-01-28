@@ -1,0 +1,32 @@
+//
+//  349-Intersection.swift
+//  SetMap
+//
+//  Created by Csy on 2019/1/28.
+//  Copyright © 2019 CXL. All rights reserved.
+//
+
+import Foundation
+
+class Intersection {
+    func solution1(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        // nums1装到set中
+        var set = Set<Int>()
+        for num in nums1 {
+            set.insert(num)
+        }
+        
+        // 相同的元素数组
+        var commons = Array<Int>()
+        
+        // 找到相同元素之后，加入到数组之后，要从set中删除，防止重复加入到数组
+        for num in nums2 {
+            if set.contains(num) {
+                commons.append(num)
+                set.remove(num)
+            }
+        }
+        
+        return commons
+    }
+}
