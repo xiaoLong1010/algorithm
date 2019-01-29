@@ -8,13 +8,21 @@
 
 import Foundation
 
+func test438() -> Void {
+    let answer = FindAnagrams()
+    //    let nums = [3,2,3,1,2,4,5,5,6]
+    let result = answer.solution2("cbaebabacd","abc")
+    print("result:", result)
+}
+test438()
+
 func test125() -> Void {
     let answer = IsPalindrome()
 //    let nums = [3,2,3,1,2,4,5,5,6]
     let result = answer.solution1("ab2a")
     print("result:", result)
 }
-test125()
+//test125()
 
 func test215() -> Void {
     let answer = FindKthLargest()
