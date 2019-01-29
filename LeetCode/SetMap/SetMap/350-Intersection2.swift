@@ -29,6 +29,7 @@ class Intersection2 {
         for num in nums2 {
             if var count = numsInfo[num] {
                 commons.append(num)
+                
                 count -= 1
                 if count == 0 {
                     numsInfo.removeValue(forKey: num)

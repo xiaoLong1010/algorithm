@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203A69BF220055ED005DACAF /* 242-IsAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203A69BE220055ED005DACAF /* 242-IsAnagram.swift */; };
+		2049E48F21FEAD8D00BC7B45 /* 349-Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */; };
+		2049E49121FEB11D00BC7B45 /* 350-Intersection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */; };
 		205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AFA0A21E8906300050688 /* 18-FourSum.swift */; };
 		2092AF9B21E59D2C0030944C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AF9A21E59D2C0030944C /* main.swift */; };
 		2092AFA221E59D540030944C /* 1-TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA121E59D540030944C /* 1-TwoSum.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		203A69BE220055ED005DACAF /* 242-IsAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-IsAnagram.swift"; sourceTree = "<group>"; };
+		2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349-Intersection.swift"; sourceTree = "<group>"; };
+		2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "350-Intersection2.swift"; sourceTree = "<group>"; };
 		205AFA0A21E8906300050688 /* 18-FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18-FourSum.swift"; sourceTree = "<group>"; };
 		2092AF9721E59D2C0030944C /* SetMap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SetMap; sourceTree = BUILT_PRODUCTS_DIR; };
 		2092AF9A21E59D2C0030944C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 				205AFA0A21E8906300050688 /* 18-FourSum.swift */,
 				2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */,
 				20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */,
+				2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */,
+				2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */,
+				203A69BE220055ED005DACAF /* 242-IsAnagram.swift */,
 			);
 			path = SetMap;
 			sourceTree = "<group>";
@@ -134,11 +143,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2049E49121FEB11D00BC7B45 /* 350-Intersection2.swift in Sources */,
 				2092AFA221E59D540030944C /* 1-TwoSum.swift in Sources */,
+				2049E48F21FEAD8D00BC7B45 /* 349-Intersection.swift in Sources */,
 				2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */,
 				205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */,
 				2092AF9B21E59D2C0030944C /* main.swift in Sources */,
 				20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */,
+				203A69BF220055ED005DACAF /* 242-IsAnagram.swift in Sources */,
 				2098FE3B21EB6F8300E26451 /* 447-NumOfBoomerangs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
