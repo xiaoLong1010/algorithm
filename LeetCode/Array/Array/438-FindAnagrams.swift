@@ -26,7 +26,7 @@ class FindAnagrams {
         let sChars = Array(s)
         let length = sChars.count
         let pLength = p.count
-        var count = pLength     //
+        var count = pLength     
         
         var counter = Dictionary<Character, Int>()
         // 初始的字符个数
