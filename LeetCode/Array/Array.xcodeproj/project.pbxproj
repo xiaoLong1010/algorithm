@@ -18,6 +18,7 @@
 		2049E48D21FEA63400BC7B45 /* 11-MaxArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E48C21FEA63400BC7B45 /* 11-MaxArea.swift */; };
 		20A78D1221F96C4D008F2D71 /* 26-RemoveDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A78D1121F96C4D008F2D71 /* 26-RemoveDuplicates.swift */; };
 		20A78D1421F980C6008F2D71 /* 80-RemoveDulicatesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A78D1321F980C6008F2D71 /* 80-RemoveDulicatesTwo.swift */; };
+		20E052DE2201185C00AFD555 /* 76-MinWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E052DD2201185C00AFD555 /* 76-MinWindow.swift */; };
 		20E523CF21E1ED1D0057EC76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523CE21E1ED1D0057EC76 /* main.swift */; };
 		20E523D621E1EDC40057EC76 /* 283-MoveZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523D521E1EDC40057EC76 /* 283-MoveZeros.swift */; };
 		20E523D821E1F5A00057EC76 /* 27-RemoveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E523D721E1F5A00057EC76 /* 27-RemoveElement.swift */; };
@@ -61,6 +62,7 @@
 		2049E48C21FEA63400BC7B45 /* 11-MaxArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11-MaxArea.swift"; sourceTree = "<group>"; };
 		20A78D1121F96C4D008F2D71 /* 26-RemoveDuplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "26-RemoveDuplicates.swift"; sourceTree = "<group>"; };
 		20A78D1321F980C6008F2D71 /* 80-RemoveDulicatesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "80-RemoveDulicatesTwo.swift"; sourceTree = "<group>"; };
+		20E052DD2201185C00AFD555 /* 76-MinWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "76-MinWindow.swift"; sourceTree = "<group>"; };
 		20E523CB21E1ED1D0057EC76 /* Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Array; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E523CE21E1ED1D0057EC76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20E523D521E1EDC40057EC76 /* 283-MoveZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "283-MoveZeros.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				20E695BC21FD98A30006BB87 /* 125-IsPalindrome.swift */,
 				2049E48C21FEA63400BC7B45 /* 11-MaxArea.swift */,
 				203A69BC21FFF761005DACAF /* 438-FindAnagrams.swift */,
+				20E052DD2201185C00AFD555 /* 76-MinWindow.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				20E695BD21FD98A30006BB87 /* 125-IsPalindrome.swift in Sources */,
 				2049E48D21FEA63400BC7B45 /* 11-MaxArea.swift in Sources */,
 				200FFE2B21FAA9D400116F27 /* 88-Merge.swift in Sources */,
+				20E052DE2201185C00AFD555 /* 76-MinWindow.swift in Sources */,
 				2017F90B21E2C4EF00C7AFB3 /* 3-LongestSubstring.swift in Sources */,
 				2017F8F921E2ACE900C7AFB3 /* 167-TwoSum2.swift in Sources */,
 				203A69BD21FFF761005DACAF /* 438-FindAnagrams.swift in Sources */,

@@ -8,13 +8,20 @@
 
 import Foundation
 
+func test76() -> Void {
+    let answer = MinWindow()
+    let result = answer.solution1("ADOBECODEBANC","ABC")
+    print("result:", result)
+}
+test76()
+
 func test438() -> Void {
     let answer = FindAnagrams()
     //    let nums = [3,2,3,1,2,4,5,5,6]
     let result = answer.solution2("cbaebabacd","abc")
     print("result:", result)
 }
-test438()
+//test438()
 
 func test125() -> Void {
     let answer = IsPalindrome()
