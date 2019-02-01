@@ -23,7 +23,7 @@ class MinWindow {
         let sChars = Array(s)
         let length = sChars.count
         let tLength = t.count
-        var leftCount = tLength     // 为匹配字符个数
+        var leftCount = tLength     // p中还剩余未匹配字符个数
         
         // 初始的字符个数
         var counter = Dictionary<Character, Int>()
