@@ -8,13 +8,32 @@
 
 import Foundation
 
+func test454() -> Void {
+    let answer = FourSum2()
+    let A = [-1,-1]
+    let B = [-1,1]
+    let C = [-1,1]
+    let D = [1,-1]
+    let result = answer.solution1(A,B,C,D)
+    print(result)
+}
+test454()
+
+func test451() -> Void {
+    let answer = FrequencySort()
+    
+    let result = answer.solution1("cccaaa")
+    print(result)
+}
+//test451()
+
 func test219_ContainsNearbyDuplicate() -> Void {
     let answer = ContainsNearbyDuplicate()
     
     let result = answer.solution2([1,0,1,1],1)
     print(result)
 }
-test219_ContainsNearbyDuplicate()
+//test219_ContainsNearbyDuplicate()
 
 func test447_numOfBoomerangs() -> Void {
     let answer = NumOfBoomerangs()

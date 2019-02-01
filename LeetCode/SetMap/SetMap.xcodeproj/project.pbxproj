@@ -10,10 +10,12 @@
 		203A69BF220055ED005DACAF /* 242-IsAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203A69BE220055ED005DACAF /* 242-IsAnagram.swift */; };
 		2049E48F21FEAD8D00BC7B45 /* 349-Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */; };
 		2049E49121FEB11D00BC7B45 /* 350-Intersection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */; };
+		204AB7FA220441DF0060E909 /* 454-FourSum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AB7F9220441DF0060E909 /* 454-FourSum2.swift */; };
 		205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AFA0A21E8906300050688 /* 18-FourSum.swift */; };
 		2092AF9B21E59D2C0030944C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AF9A21E59D2C0030944C /* main.swift */; };
 		2092AFA221E59D540030944C /* 1-TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA121E59D540030944C /* 1-TwoSum.swift */; };
 		2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */; };
+		2095508A2203466800DB99F3 /* 451-FrequencySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209550892203466800DB99F3 /* 451-FrequencySort.swift */; };
 		2098FE3B21EB6F8300E26451 /* 447-NumOfBoomerangs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */; };
 		20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */; };
 		20E052E022014F6700AFD555 /* 202-IsHappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E052DF22014F6700AFD555 /* 202-IsHappy.swift */; };
@@ -36,11 +38,13 @@
 		203A69BE220055ED005DACAF /* 242-IsAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-IsAnagram.swift"; sourceTree = "<group>"; };
 		2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349-Intersection.swift"; sourceTree = "<group>"; };
 		2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "350-Intersection2.swift"; sourceTree = "<group>"; };
+		204AB7F9220441DF0060E909 /* 454-FourSum2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "454-FourSum2.swift"; sourceTree = "<group>"; };
 		205AFA0A21E8906300050688 /* 18-FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18-FourSum.swift"; sourceTree = "<group>"; };
 		2092AF9721E59D2C0030944C /* SetMap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SetMap; sourceTree = BUILT_PRODUCTS_DIR; };
 		2092AF9A21E59D2C0030944C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2092AFA121E59D540030944C /* 1-TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1-TwoSum.swift"; sourceTree = "<group>"; };
 		2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15-ThreeSum.swift"; sourceTree = "<group>"; };
+		209550892203466800DB99F3 /* 451-FrequencySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "451-FrequencySort.swift"; sourceTree = "<group>"; };
 		2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "447-NumOfBoomerangs.swift"; sourceTree = "<group>"; };
 		20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "219-ContainsNearbyDuplicate.swift"; sourceTree = "<group>"; };
 		20E052DF22014F6700AFD555 /* 202-IsHappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "202-IsHappy.swift"; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				203A69BE220055ED005DACAF /* 242-IsAnagram.swift */,
 				20E052DF22014F6700AFD555 /* 202-IsHappy.swift */,
 				20E052E1220156BB00AFD555 /* 290-WordPattern.swift */,
+				209550892203466800DB99F3 /* 451-FrequencySort.swift */,
+				204AB7F9220441DF0060E909 /* 454-FourSum2.swift */,
 			);
 			path = SetMap;
 			sourceTree = "<group>";
@@ -160,6 +166,8 @@
 				20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */,
 				203A69BF220055ED005DACAF /* 242-IsAnagram.swift in Sources */,
 				2098FE3B21EB6F8300E26451 /* 447-NumOfBoomerangs.swift in Sources */,
+				2095508A2203466800DB99F3 /* 451-FrequencySort.swift in Sources */,
+				204AB7FA220441DF0060E909 /* 454-FourSum2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
