@@ -17,6 +17,7 @@
 		2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */; };
 		2095508A2203466800DB99F3 /* 451-FrequencySort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209550892203466800DB99F3 /* 451-FrequencySort.swift */; };
 		2098FE3B21EB6F8300E26451 /* 447-NumOfBoomerangs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */; };
+		20AD573A2205E21900E640FC /* 49-GroupAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD57392205E21900E640FC /* 49-GroupAnagrams.swift */; };
 		20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */; };
 		20E052E022014F6700AFD555 /* 202-IsHappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E052DF22014F6700AFD555 /* 202-IsHappy.swift */; };
 		20E052E2220156BB00AFD555 /* 290-WordPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E052E1220156BB00AFD555 /* 290-WordPattern.swift */; };
@@ -46,6 +47,7 @@
 		2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15-ThreeSum.swift"; sourceTree = "<group>"; };
 		209550892203466800DB99F3 /* 451-FrequencySort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "451-FrequencySort.swift"; sourceTree = "<group>"; };
 		2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "447-NumOfBoomerangs.swift"; sourceTree = "<group>"; };
+		20AD57392205E21900E640FC /* 49-GroupAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "49-GroupAnagrams.swift"; sourceTree = "<group>"; };
 		20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "219-ContainsNearbyDuplicate.swift"; sourceTree = "<group>"; };
 		20E052DF22014F6700AFD555 /* 202-IsHappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "202-IsHappy.swift"; sourceTree = "<group>"; };
 		20E052E1220156BB00AFD555 /* 290-WordPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "290-WordPattern.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				20E052E1220156BB00AFD555 /* 290-WordPattern.swift */,
 				209550892203466800DB99F3 /* 451-FrequencySort.swift */,
 				204AB7F9220441DF0060E909 /* 454-FourSum2.swift */,
+				20AD57392205E21900E640FC /* 49-GroupAnagrams.swift */,
 			);
 			path = SetMap;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				20E052E2220156BB00AFD555 /* 290-WordPattern.swift in Sources */,
 				2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */,
 				205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */,
+				20AD573A2205E21900E640FC /* 49-GroupAnagrams.swift in Sources */,
 				20E052E022014F6700AFD555 /* 202-IsHappy.swift in Sources */,
 				2092AF9B21E59D2C0030944C /* main.swift in Sources */,
 				20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */,

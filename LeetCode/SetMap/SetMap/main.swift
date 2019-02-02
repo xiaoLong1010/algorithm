@@ -8,6 +8,14 @@
 
 import Foundation
 
+func test49() -> Void {
+    let answer = GroupAnagrams()
+ 
+    let result = answer.solution3(["eat", "tea", "tan", "ate", "nat", "bat"])
+    print(result)
+}
+test49()
+
 func test454() -> Void {
     let answer = FourSum2()
     let A = [-1,-1]
@@ -17,7 +25,7 @@ func test454() -> Void {
     let result = answer.solution1(A,B,C,D)
     print(result)
 }
-test454()
+//test454()
 
 func test451() -> Void {
     let answer = FrequencySort()
