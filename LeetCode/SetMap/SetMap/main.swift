@@ -8,6 +8,15 @@
 
 import Foundation
 
+func test149() -> Void {
+    let answer = MaxPoints()
+    
+    
+    let result = answer.solution1([Point(0,0), Point(0,0)])
+    print(result)
+}
+test149()
+
 func test49() -> Void {
     let answer = GroupAnagrams()
  

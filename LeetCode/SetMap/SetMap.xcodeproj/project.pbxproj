@@ -12,6 +12,7 @@
 		2049E49121FEB11D00BC7B45 /* 350-Intersection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */; };
 		204AB7FA220441DF0060E909 /* 454-FourSum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AB7F9220441DF0060E909 /* 454-FourSum2.swift */; };
 		205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AFA0A21E8906300050688 /* 18-FourSum.swift */; };
+		2070BD032206E25300497D45 /* 149-MaxPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070BD022206E25300497D45 /* 149-MaxPoints.swift */; };
 		2092AF9B21E59D2C0030944C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AF9A21E59D2C0030944C /* main.swift */; };
 		2092AFA221E59D540030944C /* 1-TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA121E59D540030944C /* 1-TwoSum.swift */; };
 		2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */; };
@@ -41,6 +42,7 @@
 		2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "350-Intersection2.swift"; sourceTree = "<group>"; };
 		204AB7F9220441DF0060E909 /* 454-FourSum2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "454-FourSum2.swift"; sourceTree = "<group>"; };
 		205AFA0A21E8906300050688 /* 18-FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18-FourSum.swift"; sourceTree = "<group>"; };
+		2070BD022206E25300497D45 /* 149-MaxPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "149-MaxPoints.swift"; sourceTree = "<group>"; };
 		2092AF9721E59D2C0030944C /* SetMap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SetMap; sourceTree = BUILT_PRODUCTS_DIR; };
 		2092AF9A21E59D2C0030944C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2092AFA121E59D540030944C /* 1-TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1-TwoSum.swift"; sourceTree = "<group>"; };
@@ -87,7 +89,6 @@
 				2092AFA121E59D540030944C /* 1-TwoSum.swift */,
 				2092AFA321E5A3AD0030944C /* 15-ThreeSum.swift */,
 				205AFA0A21E8906300050688 /* 18-FourSum.swift */,
-				2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */,
 				20D5C8D421F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift */,
 				2049E48E21FEAD8D00BC7B45 /* 349-Intersection.swift */,
 				2049E49021FEB11D00BC7B45 /* 350-Intersection2.swift */,
@@ -97,6 +98,8 @@
 				209550892203466800DB99F3 /* 451-FrequencySort.swift */,
 				204AB7F9220441DF0060E909 /* 454-FourSum2.swift */,
 				20AD57392205E21900E640FC /* 49-GroupAnagrams.swift */,
+				2098FE3A21EB6F8300E26451 /* 447-NumOfBoomerangs.swift */,
+				2070BD022206E25300497D45 /* 149-MaxPoints.swift */,
 			);
 			path = SetMap;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				2092AFA421E5A3AD0030944C /* 15-ThreeSum.swift in Sources */,
 				205AFA0B21E8906300050688 /* 18-FourSum.swift in Sources */,
 				20AD573A2205E21900E640FC /* 49-GroupAnagrams.swift in Sources */,
+				2070BD032206E25300497D45 /* 149-MaxPoints.swift in Sources */,
 				20E052E022014F6700AFD555 /* 202-IsHappy.swift in Sources */,
 				2092AF9B21E59D2C0030944C /* main.swift in Sources */,
 				20D5C8D521F179BA009B24C4 /* 219-ContainsNearbyDuplicate.swift in Sources */,
