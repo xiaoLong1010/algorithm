@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C834822083FF900A48B34 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C834722083FF900A48B34 /* Stack.swift */; };
+		204C834A220840F400A48B34 /* 150-EvalRPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C8349220840F400A48B34 /* 150-EvalRPN.swift */; };
 		20AC411921E097FC00AC38C5 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC411721E097FC00AC38C5 /* Heap.swift */; };
 		20AC411A21E097FC00AC38C5 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC411821E097FC00AC38C5 /* PriorityQueue.swift */; };
 		20AC411C21E09A4D00AC38C5 /* 347-TopKFrequentNums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC411B21E09A4D00AC38C5 /* 347-TopKFrequentNums.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		204C834722083FF900A48B34 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		204C8349220840F400A48B34 /* 150-EvalRPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "150-EvalRPN.swift"; sourceTree = "<group>"; };
 		20AC411721E097FC00AC38C5 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		20AC411821E097FC00AC38C5 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		20AC411B21E09A4D00AC38C5 /* 347-TopKFrequentNums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347-TopKFrequentNums.swift"; sourceTree = "<group>"; };
@@ -64,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				20B87A5B21DEF84700AE5D12 /* main.swift */,
+				204C834722083FF900A48B34 /* Stack.swift */,
 				20AC411721E097FC00AC38C5 /* Heap.swift */,
 				20AC411821E097FC00AC38C5 /* PriorityQueue.swift */,
 				20AC411B21E09A4D00AC38C5 /* 347-TopKFrequentNums.swift */,
+				204C8349220840F400A48B34 /* 150-EvalRPN.swift */,
 			);
 			path = StackQueue;
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B87A5C21DEF84700AE5D12 /* main.swift in Sources */,
+				204C834A220840F400A48B34 /* 150-EvalRPN.swift in Sources */,
+				204C834822083FF900A48B34 /* Stack.swift in Sources */,
 				20AC411921E097FC00AC38C5 /* Heap.swift in Sources */,
 				20AC411A21E097FC00AC38C5 /* PriorityQueue.swift in Sources */,
 				20AC411C21E09A4D00AC38C5 /* 347-TopKFrequentNums.swift in Sources */,
