@@ -10,6 +10,7 @@
 		20399D0921F807C200E98B7A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D0821F807C200E98B7A /* main.swift */; };
 		20399D1021F807DF00E98B7A /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D0F21F807DF00E98B7A /* ListNode.swift */; };
 		20399D1221F8089A00E98B7A /* 61-RotateRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20399D1121F8089A00E98B7A /* 61-RotateRight.swift */; };
+		204C834622082D9400A48B34 /* 83-DeleteDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C834522082D9400A48B34 /* 83-DeleteDuplicates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		20399D0821F807C200E98B7A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20399D0F21F807DF00E98B7A /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		20399D1121F8089A00E98B7A /* 61-RotateRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "61-RotateRight.swift"; sourceTree = "<group>"; };
+		204C834522082D9400A48B34 /* 83-DeleteDuplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "83-DeleteDuplicates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				20399D0821F807C200E98B7A /* main.swift */,
 				20399D0F21F807DF00E98B7A /* ListNode.swift */,
 				20399D1121F8089A00E98B7A /* 61-RotateRight.swift */,
+				204C834522082D9400A48B34 /* 83-DeleteDuplicates.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20399D0921F807C200E98B7A /* main.swift in Sources */,
+				204C834622082D9400A48B34 /* 83-DeleteDuplicates.swift in Sources */,
 				20399D1021F807DF00E98B7A /* ListNode.swift in Sources */,
 				20399D1221F8089A00E98B7A /* 61-RotateRight.swift in Sources */,
 			);
