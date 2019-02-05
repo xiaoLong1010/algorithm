@@ -52,13 +52,13 @@ class BinaryTreeNode {
 
 // -----------------------------------------------------------
 // 104 二叉树的最大深度
-func maxDepth_111(_ head: BinaryTreeNode?) -> Int{
+func maxDepth_104(_ head: BinaryTreeNode?) -> Int{
     guard head != nil else {
         return 0
     }
     
-    let leftDepth = maxDepth_111(head?.left)
-    let rightDepth = maxDepth_111(head?.right)
+    let leftDepth = maxDepth_104(head?.left)
+    let rightDepth = maxDepth_104(head?.right)
     
     let max = leftDepth > rightDepth ? leftDepth : rightDepth
     return 1 + max
@@ -176,7 +176,7 @@ func isSymmetrical(_ root1: BinaryTreeNode?, _ root2: BinaryTreeNode?) -> Bool {
     }
     
     // 都不是nil，就比较value
-    if root1?.value != root2?.value {
+    if root1!.value != root2!.value {
         return false
     }
     
@@ -294,7 +294,6 @@ func lowestCommonAncestor_236(_ root: BinaryTreeNode?, _ node1: BinaryTreeNode?,
     }
     else {
         return left
-        
     }
 }
 
