@@ -24,6 +24,9 @@ class LetterCombinations {
     private var result = Array<String>()
     
     func letterCombinations(_ str: String) -> Array<String> {
+        if str.count == 0 {
+            return []
+        }
         self.result.removeAll()
         
         findCombination(str, index: str.startIndex, combinationStr: "")
@@ -31,7 +34,7 @@ class LetterCombinations {
     }
     
     // combinationStr,0到index-1的组合字符串
-    // index是
+    // index是当前的索引
     func findCombination(_ digits: String, index: String.Index, combinationStr: String) -> Void {
         // 超出最后一个字符了，已经得到了结果
         if index >= digits.endIndex {
@@ -48,7 +51,7 @@ class LetterCombinations {
         
         // 遍历所有的字母，
         for letter in letters {
-            findCombination(digits, index: digits.index(after: index), combinationStr: combinationStr + "\(letter)")
+            self.findCombination(digits, index: digits.index(after: index), combinationStr: combinationStr + "\(letter)")
         }
     }
 }

@@ -45,6 +45,13 @@ import Foundation
 //let comb = Combinations()
 //print(comb.combina(4, 2))
 
+func test93() -> Void {
+    let answer = RestoreIpAddresses()
+    let result = answer.solution1("25525511135")
+    print("result: ", result)
+}
+test93()
+
 func test79_WordSearch() -> Void {
     let search = WordSearch()
     let one: [Character] = ["a","b","t","g"]
@@ -59,6 +66,6 @@ func test79_WordSearch() -> Void {
     print(search.exist(board, "bfce"))
     print(search.exist(board, "abfb"))
 }
-test79_WordSearch()
+//test79_WordSearch()
 
 

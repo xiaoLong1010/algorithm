@@ -12,6 +12,7 @@
 		2017B06921CE524B00AA6FB6 /* 77.-Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017B06821CE524B00AA6FB6 /* 77.-Combinations.swift */; };
 		202FBE8021CDCCD0009308F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FBE7F21CDCCD0009308F3 /* main.swift */; };
 		20A152FF21CFB20500B7CAA8 /* 79-WordSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A152FE21CFB20500B7CAA8 /* 79-WordSearch.swift */; };
+		20CFA76B220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		202FBE7C21CDCCD0009308F3 /* Backtracking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Backtracking; sourceTree = BUILT_PRODUCTS_DIR; };
 		202FBE7F21CDCCD0009308F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20A152FE21CFB20500B7CAA8 /* 79-WordSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "79-WordSearch.swift"; sourceTree = "<group>"; };
+		20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "93-RestoreIpAddresses.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				2017B06621CE392C00AA6FB6 /* 46-Permutations.swift */,
 				2017B06821CE524B00AA6FB6 /* 77.-Combinations.swift */,
 				20A152FE21CFB20500B7CAA8 /* 79-WordSearch.swift */,
+				20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CFA76B220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift in Sources */,
 				2017B06921CE524B00AA6FB6 /* 77.-Combinations.swift in Sources */,
 				202FBE8021CDCCD0009308F3 /* main.swift in Sources */,
 				20A152FF21CFB20500B7CAA8 /* 79-WordSearch.swift in Sources */,
