@@ -40,6 +40,8 @@ class Permutations {
                 used[index] = true
                 perm.append(nums[index])
                 generatePermutation(nums, currentIndex+1, &perm)
+                
+                // 必须要回去
                 perm.removeLast()
                 used[index] = false
             }

@@ -20,7 +20,7 @@ class WordSearch {
         
         //先初始化visited二维数组
         let oneCol = Array(repeating: false, count: colLength)
-        visited = Array(repeating: oneCol, count: rowLength)
+        self.visited = Array(repeating: oneCol, count: rowLength)
         
         // 遍历board，查看以每一个坐标为起点，是否存在字符串
         for x in 0..<rowLength {
