@@ -18,6 +18,10 @@ class LongestIncreaseSubsequence {
             return 0
         }
         
+        if length == 1 {
+            return 1
+        }
+        
         // 初始化。除了dp[0]符合定义，其他的dp[i]的初始值，都是最小值
         var dp = Array(repeating: 1, count: length)
         
@@ -47,6 +51,9 @@ class LongestIncreaseSubsequence {
         let length = nums.count
         if length == 0 {
             return 0
+        }
+        if length == 1 {
+            return 1
         }
         
         // 初始化
@@ -79,7 +86,7 @@ class LongestIncreaseSubsequence {
         var right = maxIndex
         
         while left < right {
-            let mid = (left + right) >> 1
+            let mid = left + (right-left)>>1
             let middleValue = dp[mid]
             if target == middleValue {
                 return mid

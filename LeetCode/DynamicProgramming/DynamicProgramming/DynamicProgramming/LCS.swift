@@ -92,7 +92,7 @@ class  LongestCommonSubsequence {
 }
 
 /**
- dp[i][j] 表示S1的前 i 个字符与S2的前j个字符最长公共子序列的长度
+ dp[i][j] 表示S1的前 i 个字符与S2的前j个字符最长公共子字符串的长度
  dp[i][j] = dp[i-1][j-1] + 1,当 S1i==S2j 时
  dp[i][j] = 0,当 S1i!=S2j 时
  */

@@ -25,13 +25,16 @@ class HouseRobber {
         if nums.count == 0  {
             return 0
         }
+        if nums.count == 1  {
+            return nums[0]
+        }
         
         let length = nums.count
         var historyList = Array(repeating: 0, count: length)
         historyList[0] = nums[0]
         
         for index in 1...(length-1) {
-            let temp1 = (index - 2 >= 0) ? (nums[index] + historyList[index - 2]) : 0
+            let temp1 = nums[index] + ((index - 2 >= 0) ? historyList[index - 2] : 0)
             let temp2 = historyList[index - 1]
             historyList[index] = max(temp1, temp2)
         }

@@ -13,7 +13,7 @@ func testLCS2() -> Void {
     let result1 = lcs.solution1("ABCBDEFBWD","BCBWD")
     print(result1)
 }
-testLCS2()
+//testLCS2()
 
 func testLPS() -> Void {
     let lps = LongestPalindromicSubstring()
@@ -58,7 +58,7 @@ func testLIS() -> Void {
     let result2 = lis.solution2(nums)
     print("result2 :" ,result2)
 }
-//testLIS()
+testLIS()
 
 func testKnapsack() -> Void {
     let sack  = Knapsack()
