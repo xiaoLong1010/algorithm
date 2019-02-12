@@ -14,6 +14,8 @@
 		203D632921D324CF0050A577 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632821D324CF0050A577 /* Knapsack.swift */; };
 		206AC04321D5C41400208E65 /* LCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206AC04221D5C41400208E65 /* LCS.swift */; };
 		20C267832212772200247F0E /* 70-ClimbStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C267822212772200247F0E /* 70-ClimbStairs.swift */; };
+		20C2678522128CE300247F0E /* 279-NumSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2678422128CE300247F0E /* 279-NumSquares.swift */; };
+		20C267872212A07500247F0E /* 213-Rob2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C267862212A07500247F0E /* 213-Rob2.swift */; };
 		20E0422421DC7A2D007FCF73 /* 5-LPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0422321DC7A2D007FCF73 /* 5-LPS.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		203D632821D324CF0050A577 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
 		206AC04221D5C41400208E65 /* LCS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCS.swift; sourceTree = "<group>"; };
 		20C267822212772200247F0E /* 70-ClimbStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "70-ClimbStairs.swift"; sourceTree = "<group>"; };
+		20C2678422128CE300247F0E /* 279-NumSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "279-NumSquares.swift"; sourceTree = "<group>"; };
+		20C267862212A07500247F0E /* 213-Rob2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "213-Rob2.swift"; sourceTree = "<group>"; };
 		20E0422321DC7A2D007FCF73 /* 5-LPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5-LPS.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +78,9 @@
 				20047EF621D1F77200EF4014 /* main.swift */,
 				20C267822212772200247F0E /* 70-ClimbStairs.swift */,
 				20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */,
+				20C2678422128CE300247F0E /* 279-NumSquares.swift */,
 				203D632621D318100050A577 /* 198-HouseRobber.swift */,
+				20C267862212A07500247F0E /* 213-Rob2.swift */,
 				203D632821D324CF0050A577 /* Knapsack.swift */,
 				202AC42421D465F700C26052 /* 300-LIS.swift */,
 				206AC04221D5C41400208E65 /* LCS.swift */,
@@ -147,6 +153,8 @@
 				203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */,
 				20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */,
 				206AC04321D5C41400208E65 /* LCS.swift in Sources */,
+				20C267872212A07500247F0E /* 213-Rob2.swift in Sources */,
+				20C2678522128CE300247F0E /* 279-NumSquares.swift in Sources */,
 				202AC42521D465F700C26052 /* 300-LIS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

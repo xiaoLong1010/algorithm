@@ -8,6 +8,15 @@
 
 import Foundation
 
+func test213() -> Void {
+    let robber  = Rob2()
+    let nums = [2,3,2]
+    
+    let result1 = robber.solution1(nums)
+    print("result1 :" ,result1)
+}
+test213()
+
 func testLCS2() -> Void {
     let lcs = LongestCommonSubString()
     let result1 = lcs.solution1("ABCBDEFBWD","BCBWD")
