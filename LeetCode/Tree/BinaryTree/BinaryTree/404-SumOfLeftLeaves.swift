@@ -15,16 +15,16 @@ import Foundation
 
 class SumOfLeftLeaves {
     
-    func solution1(_ root: TreeNode?) -> Int {
+    func sumOfLeftLeaves(_ root: TreeNode?) -> Int {
         if root == nil {
             return 0
         }
         
         // 如果左边刚好是左叶子，那就加上右边
         if root?.left != nil && root?.left?.left == nil && root?.left?.right == nil {
-            return (root?.left?.val)! + self.solution1(root?.right)
+            return (root?.left?.val)! + self.sumOfLeftLeaves(root?.right)
         } else {
-            return self.solution1(root?.left) + self.solution1(root?.right)
+            return self.sumOfLeftLeaves(root?.left) + self.sumOfLeftLeaves(root?.right)
         }
     }
 }
