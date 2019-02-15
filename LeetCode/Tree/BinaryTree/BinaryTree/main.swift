@@ -28,6 +28,7 @@ class BinaryTreeNode {
     }
 }
 
+
 // 104 二叉树的最大深度
 // 111 二叉树的最小深度
 // 112 是否存在一个路径，和为sum
@@ -158,7 +159,7 @@ func isSameTree(_ root1: BinaryTreeNode?, _ root2: BinaryTreeNode?) -> Bool {
     
     // 都不为nil，先比较value，再比较左右子树
     if root1!.value == root2!.value {
-        return isSameTree(root1?.left, root2?.left)
+        return isSameTree(root1?.left, root2?.left) && isSameTree(root1?.right, root2?.right)
     } else {
         return false
     }
@@ -210,8 +211,8 @@ func hasPathSum_112(_ root: BinaryTreeNode?, sum: Int) -> Bool {
         return true
     }
     
-    return hasPathSum_112(root?.left, sum: sum - (root?.left?.value  ?? 0)) ||
-        hasPathSum_112(root?.right, sum: sum - (root?.right?.value ?? 0))
+    return hasPathSum_112(root?.left, sum: sum - root!.value) ||
+        hasPathSum_112(root?.right, sum: sum - root!.value)
 }
 
 /**
