@@ -226,8 +226,8 @@ func countOfPathSum_437(_ root: BinaryTreeNode?, sum: Int) -> Int {
     // 以root为起点的路径
     // 左右子树的路径
     return pathSumOfNode(root,sum: sum) +
-        countOfPathSum_437(root?.left, sum:sum - root!.value) +
-        countOfPathSum_437(root?.right, sum:sum - root!.value)
+        countOfPathSum_437(root?.left, sum:sum) +
+        countOfPathSum_437(root?.right, sum:sum)
 }
 
 func pathSumOfNode(_ node: BinaryTreeNode?, sum: Int) -> Int {

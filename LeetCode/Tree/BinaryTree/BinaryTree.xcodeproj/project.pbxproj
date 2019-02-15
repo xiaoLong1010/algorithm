@@ -19,6 +19,10 @@
 		208DB9B6221668610061CD9A /* 222-CountNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9B5221668610061CD9A /* 222-CountNodes.swift */; };
 		208DB9B822166D380061CD9A /* 110-IsBalanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9B722166D380061CD9A /* 110-IsBalanced.swift */; };
 		208DB9BA221681250061CD9A /* 112-HasPathSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9B9221681250061CD9A /* 112-HasPathSum.swift */; };
+		208DB9BC22169F750061CD9A /* 257-BinaryTreePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9BB22169F750061CD9A /* 257-BinaryTreePaths.swift */; };
+		208DB9BE2216A2820061CD9A /* 113-PathSum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9BD2216A2820061CD9A /* 113-PathSum2.swift */; };
+		208DB9C02216AB380061CD9A /* 129-SumNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9BF2216AB380061CD9A /* 129-SumNumbers.swift */; };
+		208DB9C22216C2480061CD9A /* 437-PathSum3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DB9C12216C2480061CD9A /* 437-PathSum3.swift */; };
 		20B3C7A221C1CEE1002814D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3C7A121C1CEE1002814D9 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		208DB9B5221668610061CD9A /* 222-CountNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "222-CountNodes.swift"; sourceTree = "<group>"; };
 		208DB9B722166D380061CD9A /* 110-IsBalanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "110-IsBalanced.swift"; sourceTree = "<group>"; };
 		208DB9B9221681250061CD9A /* 112-HasPathSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "112-HasPathSum.swift"; sourceTree = "<group>"; };
+		208DB9BB22169F750061CD9A /* 257-BinaryTreePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "257-BinaryTreePaths.swift"; sourceTree = "<group>"; };
+		208DB9BD2216A2820061CD9A /* 113-PathSum2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "113-PathSum2.swift"; sourceTree = "<group>"; };
+		208DB9BF2216AB380061CD9A /* 129-SumNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "129-SumNumbers.swift"; sourceTree = "<group>"; };
+		208DB9C12216C2480061CD9A /* 437-PathSum3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "437-PathSum3.swift"; sourceTree = "<group>"; };
 		20B3C79E21C1CEE1002814D9 /* BinaryTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinaryTree; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B3C7A121C1CEE1002814D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +102,10 @@
 				208DB9B722166D380061CD9A /* 110-IsBalanced.swift */,
 				208DB9B9221681250061CD9A /* 112-HasPathSum.swift */,
 				2056FA5E2209D35200AB3EA5 /* 404-SumOfLeftLeaves.swift */,
+				208DB9BB22169F750061CD9A /* 257-BinaryTreePaths.swift */,
+				208DB9BD2216A2820061CD9A /* 113-PathSum2.swift */,
+				208DB9BF2216AB380061CD9A /* 129-SumNumbers.swift */,
+				208DB9C12216C2480061CD9A /* 437-PathSum3.swift */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -161,11 +173,15 @@
 				208DB9B4221661C60061CD9A /* 101-IsSymmetric.swift in Sources */,
 				208DB9B822166D380061CD9A /* 110-IsBalanced.swift in Sources */,
 				2056FA5F2209D35200AB3EA5 /* 404-SumOfLeftLeaves.swift in Sources */,
+				208DB9BC22169F750061CD9A /* 257-BinaryTreePaths.swift in Sources */,
 				208DB9AC221653470061CD9A /* 104-MaxDepth.swift in Sources */,
 				205C8DB621C7162D00DD5602 /* Stack.swift in Sources */,
+				208DB9C02216AB380061CD9A /* 129-SumNumbers.swift in Sources */,
 				208DB9AE2216584E0061CD9A /* 111-MinDepth.swift in Sources */,
 				20B3C7A221C1CEE1002814D9 /* main.swift in Sources */,
 				208DB9B022165AB30061CD9A /* 226-InvertTree.swift in Sources */,
+				208DB9C22216C2480061CD9A /* 437-PathSum3.swift in Sources */,
+				208DB9BE2216A2820061CD9A /* 113-PathSum2.swift in Sources */,
 				2056FA5D2209D0DB00AB3EA5 /* TreeNode.swift in Sources */,
 				208DB9BA221681250061CD9A /* 112-HasPathSum.swift in Sources */,
 			);
