@@ -8,6 +8,24 @@
 
 import Foundation
 
+func test93() -> Void {
+    let answer  = UniquePathsWithObstacles()
+    let nums = [[0,1]]
+    
+    let result1 = answer.uniquePathsWithObstacles(nums)
+    print("result1 :" ,result1)
+}
+test93()
+
+func test91() -> Void {
+    let answer  = NumDecodings()
+    let nums = "226"
+    
+    let result1 = answer.numDecodings(nums)
+    print("result1 :" ,result1)
+}
+test91()
+
 func test213() -> Void {
     let robber  = Rob2()
     let nums = [2,3,2]
