@@ -14,31 +14,13 @@
  解释: 12 = 4 + 4 + 4.
  
  dp[i]表示组成的最小个数
- dp[i + j*j]
+ dp[i] = min(dp[i], dp[i-j*j])
  */
 
 import Foundation
 
 class NumSquares {
     func solution1(_ n: Int) -> Int {
-        var dp = Array(repeating: n, count: n+1)
-        dp[0] = 0
-        
-        for i in 0...n {
-            var j = 1
-            var num = i + j * j
-            
-            while num <= n {
-                dp[num] = min(dp[num], dp[i] + 1)
-                j += 1
-                num = i + j * j
-            }
-        }
-        
-        return dp[n]
-    }
-    
-    func solution2(_ n: Int) -> Int {
         if n <= 0  {
             return 0
         }
@@ -62,6 +44,26 @@ class NumSquares {
         
         return dp[n]
     }
+    
+    func solution2(_ n: Int) -> Int {
+        var dp = Array(repeating: n, count: n+1)
+        dp[0] = 0
+        
+        for i in 0...n {
+            var j = 1
+            var num = i + j * j
+            
+            while num <= n {
+                dp[num] = min(dp[num], dp[i] + 1)
+                j += 1
+                num = i + j * j
+            }
+        }
+        
+        return dp[n]
+    }
+    
+
     
     func solution3(_ n: Int) -> Int {
         var dp: [Int] = [Int](repeating: Int.max, count: n+1)
