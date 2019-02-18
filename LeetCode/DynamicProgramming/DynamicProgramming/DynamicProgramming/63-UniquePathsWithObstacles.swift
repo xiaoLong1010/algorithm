@@ -38,7 +38,7 @@ class UniquePathsWithObstacles {
             return 0
         }
         
-        // 初始化dp,如果前面有障碍，dp=0，并且后面的都等于0
+        // 初始化dp,如果有障碍，路径数等于0
         var dp = Array(repeating:Array(repeating:-1,count:cols),count:rows)
         dp[0][0] = 1
         for row in 1..<rows {
