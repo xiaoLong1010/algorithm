@@ -28,10 +28,10 @@ class CoinChange {
         var dp = Array(repeating: maxSum, count: amount+1)
         dp[0] = 0
         
-        for aSum in 0...amount {
+        for i in 0...amount {
             for c in coins {
-                if aSum >= c {
-                    dp[aSum] = min(dp[aSum], dp[aSum-c]+1)
+                if i >= c {
+                    dp[i] = min(dp[i], dp[i-c]+1)
                 }
             }
         }
