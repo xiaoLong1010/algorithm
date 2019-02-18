@@ -8,6 +8,26 @@
 
 import Foundation
 
+func test337() -> Void {
+    let answer  = Rob3()
+    let node1 = TreeNode(3)
+    let node2 = TreeNode(4)
+    let node3 = TreeNode(5)
+    let node4 = TreeNode(1)
+    let node5 = TreeNode(3)
+    let node6 = TreeNode(1)
+    
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.right = node6
+    
+    let result1 = answer.rob(node1)
+    print("result1 :" ,result1)
+}
+test337()
+
 func test93() -> Void {
     let answer  = UniquePathsWithObstacles()
     let nums = [[0,1]]
