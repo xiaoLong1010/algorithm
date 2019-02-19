@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		20047EF721D1F77200EF4014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EF621D1F77200EF4014 /* main.swift */; };
 		20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */; };
+		20092489221B951C001082A9 /* 377-CombinationSum4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20092488221B951C001082A9 /* 377-CombinationSum4.swift */; };
+		2009248B221BA88D001082A9 /* 474-FindMaxForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009248A221BA88D001082A9 /* 474-FindMaxForm.swift */; };
 		202AC42521D465F700C26052 /* 300-LIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AC42421D465F700C26052 /* 300-LIS.swift */; };
 		203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632621D318100050A577 /* 198-HouseRobber.swift */; };
 		203D632921D324CF0050A577 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632821D324CF0050A577 /* Knapsack.swift */; };
@@ -44,6 +46,8 @@
 		20047EF321D1F77200EF4014 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		20047EF621D1F77200EF4014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "343-IntegerBreak.swift"; sourceTree = "<group>"; };
+		20092488221B951C001082A9 /* 377-CombinationSum4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "377-CombinationSum4.swift"; sourceTree = "<group>"; };
+		2009248A221BA88D001082A9 /* 474-FindMaxForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "474-FindMaxForm.swift"; sourceTree = "<group>"; };
 		202AC42421D465F700C26052 /* 300-LIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300-LIS.swift"; sourceTree = "<group>"; };
 		203D632621D318100050A577 /* 198-HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "198-HouseRobber.swift"; sourceTree = "<group>"; };
 		203D632821D324CF0050A577 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				20A8EF4F221A84A400759931 /* 309-MaxProfit.swift */,
 				203D632821D324CF0050A577 /* Knapsack.swift */,
 				20C267882212C26000247F0E /* 322-CoinChange.swift */,
+				20092488221B951C001082A9 /* 377-CombinationSum4.swift */,
+				2009248A221BA88D001082A9 /* 474-FindMaxForm.swift */,
 				202AC42421D465F700C26052 /* 300-LIS.swift */,
 				206AC04221D5C41400208E65 /* LCS.swift */,
 				20E0422321DC7A2D007FCF73 /* 5-LPS.swift */,
@@ -179,12 +185,14 @@
 				206F015B22195668002E067D /* 91-NumDecodings.swift in Sources */,
 				20047EF721D1F77200EF4014 /* main.swift in Sources */,
 				20E0422421DC7A2D007FCF73 /* 5-LPS.swift in Sources */,
+				20092489221B951C001082A9 /* 377-CombinationSum4.swift in Sources */,
 				203D632921D324CF0050A577 /* Knapsack.swift in Sources */,
 				203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */,
 				20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */,
 				20A8EF4C221A4D0800759931 /* 337-Rob3.swift in Sources */,
 				206AC04321D5C41400208E65 /* LCS.swift in Sources */,
 				20A8EF4E221A4E8D00759931 /* TreeNode.swift in Sources */,
+				2009248B221BA88D001082A9 /* 474-FindMaxForm.swift in Sources */,
 				20A8EF50221A84A400759931 /* 309-MaxProfit.swift in Sources */,
 				206F015D22197D59002E067D /* 62-UniquePaths.swift in Sources */,
 				20C267892212C26000247F0E /* 322-CoinChange.swift in Sources */,

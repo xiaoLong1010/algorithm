@@ -8,6 +8,17 @@
 
 import Foundation
 
+func test474() -> Void {
+    let answer  = FindMaxForm()
+    let strs = ["10", "0001", "111001", "1", "0"]
+    let m = 5
+    let n = 3
+
+    let result1 = answer.findMaxForm2(strs, m, n)
+    print("result1 :" ,result1)
+}
+test474()
+
 func test337() -> Void {
     let answer  = Rob3()
     let node1 = TreeNode(3)
@@ -26,7 +37,7 @@ func test337() -> Void {
     let result1 = answer.rob(node1)
     print("result1 :" ,result1)
 }
-test337()
+//test337()
 
 func test93() -> Void {
     let answer  = UniquePathsWithObstacles()
