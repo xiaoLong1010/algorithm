@@ -8,6 +8,16 @@
 
 import Foundation
 
+func test139() -> Void {
+    let answer  = WordBreak()
+    let s = "leetcode"
+    let words = ["leet", "code"]
+    
+    let result1 = answer.wordBreak(s, words)
+    print("result1 :" ,result1)
+}
+test139()
+
 func test474() -> Void {
     let answer  = FindMaxForm()
     let strs = ["10", "0001", "111001", "1", "0"]
