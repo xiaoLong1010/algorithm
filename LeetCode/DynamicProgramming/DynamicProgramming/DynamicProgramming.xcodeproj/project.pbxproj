@@ -29,6 +29,7 @@
 		20C267892212C26000247F0E /* 322-CoinChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C267882212C26000247F0E /* 322-CoinChange.swift */; };
 		20E0422421DC7A2D007FCF73 /* 5-LPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0422321DC7A2D007FCF73 /* 5-LPS.swift */; };
 		20E39D77221CF41000DA9EA2 /* 139-WordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E39D76221CF41000DA9EA2 /* 139-WordBreak.swift */; };
+		20E39D79221D378100DA9EA2 /* 494-FindTargetSumWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E39D78221D378100DA9EA2 /* 494-FindTargetSumWays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +68,7 @@
 		20C267882212C26000247F0E /* 322-CoinChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "322-CoinChange.swift"; sourceTree = "<group>"; };
 		20E0422321DC7A2D007FCF73 /* 5-LPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5-LPS.swift"; sourceTree = "<group>"; };
 		20E39D76221CF41000DA9EA2 /* 139-WordBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "139-WordBreak.swift"; sourceTree = "<group>"; };
+		20E39D78221D378100DA9EA2 /* 494-FindTargetSumWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "494-FindTargetSumWays.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				20092488221B951C001082A9 /* 377-CombinationSum4.swift */,
 				2009248A221BA88D001082A9 /* 474-FindMaxForm.swift */,
 				20E39D76221CF41000DA9EA2 /* 139-WordBreak.swift */,
+				20E39D78221D378100DA9EA2 /* 494-FindTargetSumWays.swift */,
 				202AC42421D465F700C26052 /* 300-LIS.swift */,
 				206AC04221D5C41400208E65 /* LCS.swift */,
 				20E0422321DC7A2D007FCF73 /* 5-LPS.swift */,
@@ -198,6 +201,7 @@
 				20A8EF4E221A4E8D00759931 /* TreeNode.swift in Sources */,
 				2009248B221BA88D001082A9 /* 474-FindMaxForm.swift in Sources */,
 				20A8EF50221A84A400759931 /* 309-MaxProfit.swift in Sources */,
+				20E39D79221D378100DA9EA2 /* 494-FindTargetSumWays.swift in Sources */,
 				206F015D22197D59002E067D /* 62-UniquePaths.swift in Sources */,
 				20C267892212C26000247F0E /* 322-CoinChange.swift in Sources */,
 				20C267872212A07500247F0E /* 213-Rob2.swift in Sources */,

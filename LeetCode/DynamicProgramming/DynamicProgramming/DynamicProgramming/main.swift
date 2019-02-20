@@ -8,6 +8,16 @@
 
 import Foundation
 
+func test494() -> Void {
+    let answer  = FindTargetSumWays()
+    let nums = [1, 1, 1, 1, 1]
+    let sum = 3
+    
+    let result1 = answer.findTargetSumWays([1000],-1000)
+    print("result1 :" ,result1)
+}
+test494()
+
 func test139() -> Void {
     let answer  = WordBreak()
     let s = "leetcode"
@@ -16,7 +26,7 @@ func test139() -> Void {
     let result1 = answer.wordBreak(s, words)
     print("result1 :" ,result1)
 }
-test139()
+//test139()
 
 func test474() -> Void {
     let answer  = FindMaxForm()
@@ -27,7 +37,7 @@ func test474() -> Void {
     let result1 = answer.findMaxForm2(strs, m, n)
     print("result1 :" ,result1)
 }
-test474()
+//test474()
 
 func test337() -> Void {
     let answer  = Rob3()
@@ -56,7 +66,7 @@ func test93() -> Void {
     let result1 = answer.uniquePathsWithObstacles(nums)
     print("result1 :" ,result1)
 }
-test93()
+//test93()
 
 func test91() -> Void {
     let answer  = NumDecodings()
@@ -65,7 +75,7 @@ func test91() -> Void {
     let result1 = answer.numDecodings(nums)
     print("result1 :" ,result1)
 }
-test91()
+//test91()
 
 func test213() -> Void {
     let robber  = Rob2()
@@ -74,7 +84,7 @@ func test213() -> Void {
     let result1 = robber.solution1(nums)
     print("result1 :" ,result1)
 }
-test213()
+//test213()
 
 func testLCS2() -> Void {
     let lcs = LongestCommonSubString()
