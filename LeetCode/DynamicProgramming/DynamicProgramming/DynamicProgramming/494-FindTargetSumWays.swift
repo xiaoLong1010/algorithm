@@ -52,11 +52,15 @@ class FindTargetSumWays {
         // 新的sum
         let target = (S + maxSum) >> 1
         
-        // dp[i]表示[0...i]个数字，组成i的个数
+        // dp[i]表示组成i的个数。初始化相当于nums为空数组
         var dp = Array(repeating: 0, count: target+1)
         dp[0] = 1
         
         // 一定要从最大值开始计算
+        // 使用num，不断地更新dp
+        // 第一次,num1
+        // 第二次，{num1，num2}
+        // dp[i]和即可以利用dp[i-num]
         for num in nums {
             var i = target
             while i >= num {
