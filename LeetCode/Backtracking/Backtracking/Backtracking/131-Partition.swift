@@ -43,6 +43,9 @@ class Partition {
             return
         }
         
+        // 依次取[0]，[0,1],[0,2]的字符串，先判断自己是否为回文
+        // 再递归判断剩下的字符串
+        // 中间结果都放到subReults
         for end in start..<count {
             if isPalindrome(chars, start, end) {
                 subReults.append(String(chars[start...end]))
