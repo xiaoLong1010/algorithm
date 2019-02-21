@@ -17,6 +17,7 @@
 		20CFA67F220C193F0009B21C /* 200-NumIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA67E220C193F0009B21C /* 200-NumIslands.swift */; };
 		20CFA681220C39480009B21C /* 51-SolveNQueens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA680220C39480009B21C /* 51-SolveNQueens.swift */; };
 		20CFA76B220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */; };
+		20DC97A0221E4F7C00D3FC7C /* 131-Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC979F221E4F7C00D3FC7C /* 131-Partition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		20CFA67E220C193F0009B21C /* 200-NumIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "200-NumIslands.swift"; sourceTree = "<group>"; };
 		20CFA680220C39480009B21C /* 51-SolveNQueens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "51-SolveNQueens.swift"; sourceTree = "<group>"; };
 		20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "93-RestoreIpAddresses.swift"; sourceTree = "<group>"; };
+		20DC979F221E4F7C00D3FC7C /* 131-Partition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "131-Partition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				202FBE7F21CDCCD0009308F3 /* main.swift */,
 				2017B06421CE17CC00AA6FB6 /* 17-LetterCombinations.swift */,
 				20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */,
+				20DC979F221E4F7C00D3FC7C /* 131-Partition.swift */,
 				2017B06621CE392C00AA6FB6 /* 46-Permutations.swift */,
 				20CFA67A220BF3B50009B21C /* 47-PermuteUnique.swift */,
 				2017B06821CE524B00AA6FB6 /* 77.-Combinations.swift */,
@@ -155,6 +158,7 @@
 				202FBE8021CDCCD0009308F3 /* main.swift in Sources */,
 				20A152FF21CFB20500B7CAA8 /* 79-WordSearch.swift in Sources */,
 				2017B06721CE392C00AA6FB6 /* 46-Permutations.swift in Sources */,
+				20DC97A0221E4F7C00D3FC7C /* 131-Partition.swift in Sources */,
 				2017B06521CE17CC00AA6FB6 /* 17-LetterCombinations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
