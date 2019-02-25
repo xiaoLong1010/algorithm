@@ -39,6 +39,20 @@ class NumIslands {
         return num
     }
     
+    // 从坐标x，y进行flood fill，填充，不用进行重置
+    func dfs(_ grid: [[Character]], _ x: Int, _ y: Int) -> Void {
+        self.visited[x][y] = true
+        
+        for i in 0...3 {
+            let newX = x + self.d[i][0]
+            let newY = y + self.d[i][1]
+            if self.inGrid(grid, newX, newY) && !self.visited[newX][newY] && grid[newX][newY] == "1" {
+                dfs(grid, newX, newY)
+            }
+        }
+        return
+    }
+    
     func solution2(_ grid: [[Character]]) -> Int {
         if grid.count == 0 || grid[0].count == 0 {
             return 0
@@ -61,20 +75,6 @@ class NumIslands {
             }
         }
         return num
-    }
-    
-    // 从坐标x，y进行flood fill，填充，不用进行重置
-    func dfs(_ grid: [[Character]], _ x: Int, _ y: Int) -> Void {
-        self.visited[x][y] = true
-        
-        for i in 0...3 {
-            let newX = x + self.d[i][0]
-            let newY = y + self.d[i][1]
-            if self.inGrid(grid, newX, newY) && !self.visited[newX][newY] && grid[newX][newY] == "1" {
-                dfs(grid, newX, newY)
-            }
-        }
-        return
     }
     
     func dfs2(_ grid: inout [[Character]], _ x: Int, _ y: Int) -> Void {

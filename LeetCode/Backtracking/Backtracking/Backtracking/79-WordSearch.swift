@@ -11,8 +11,8 @@ import Foundation
 class WordSearch {
     private var visited = Array<Array<Bool>>()
     
-    func exist(_ board:Array<Array<Character>>, _ str: String) -> Bool {
-        if board.count == 0 || board[0].count == 0 || str.count == 0 {
+    func exist(_ board: [[Character]], _ word: String) -> Bool {
+        if board.count == 0 || board[0].count == 0 || word.count == 0 {
             return false
         }
         let rowLength = board.count
@@ -25,7 +25,7 @@ class WordSearch {
         // 遍历board，查看以每一个坐标为起点，是否存在字符串
         for x in 0..<rowLength {
             for y in 0..<colLength {
-                let result = searchWord(board, searchStr: str, startFromStr: 0, xInBoard: x, yInBoard: y)
+                let result = searchWord(board, searchStr: word, startFromStr: 0, xInBoard: x, yInBoard: y)
                 if result {
                     print(x,y)
                     return true

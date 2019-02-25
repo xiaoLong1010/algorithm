@@ -46,6 +46,7 @@ class SolveNQueens {
                 aResult.append(String(chars))
             }
             self.results.append(aResult)
+            return
         }
         
         for col in 0..<n {
