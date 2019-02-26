@@ -8,6 +8,15 @@
 
 import Foundation
 
+func test151() -> Void {
+    let answer = ReverseWords()
+    
+    let result = answer.reverseWords("the sky is blue")
+    
+    print("result",result)
+}
+test151()
+
 func test43() -> Void {
     let answer = MultiplyStrings()
     
@@ -15,7 +24,7 @@ func test43() -> Void {
     
     print("result",result)
 }
-test43()
+//test43()
 
 func test567() -> Void {
     let answer = CheckInclusion()

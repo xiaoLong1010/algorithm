@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20314901222408FF006FA7AF /* 43-MultiplyStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20314900222408FF006FA7AF /* 43-MultiplyStrings.swift */; };
+		204C8C282224EB8E004D5BEE /* 151-ReverseWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C8C272224EB8E004D5BEE /* 151-ReverseWords.swift */; };
 		20F7BE652223851D002536A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7BE642223851D002536A8 /* main.swift */; };
 		20F7BE6C22238547002536A8 /* 14-LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7BE6B22238547002536A8 /* 14-LongestCommonPrefix.swift */; };
 		20F7BE6E222398FF002536A8 /* 567-CheckInclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7BE6D222398FF002536A8 /* 567-CheckInclusion.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		20314900222408FF006FA7AF /* 43-MultiplyStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "43-MultiplyStrings.swift"; sourceTree = "<group>"; };
+		204C8C272224EB8E004D5BEE /* 151-ReverseWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "151-ReverseWords.swift"; sourceTree = "<group>"; };
 		20F7BE612223851D002536A8 /* String */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = String; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F7BE642223851D002536A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20F7BE6B22238547002536A8 /* 14-LongestCommonPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "14-LongestCommonPrefix.swift"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				20F7BE6B22238547002536A8 /* 14-LongestCommonPrefix.swift */,
 				20F7BE6D222398FF002536A8 /* 567-CheckInclusion.swift */,
 				20314900222408FF006FA7AF /* 43-MultiplyStrings.swift */,
+				204C8C272224EB8E004D5BEE /* 151-ReverseWords.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204C8C282224EB8E004D5BEE /* 151-ReverseWords.swift in Sources */,
 				20F7BE6C22238547002536A8 /* 14-LongestCommonPrefix.swift in Sources */,
 				20314901222408FF006FA7AF /* 43-MultiplyStrings.swift in Sources */,
 				20F7BE652223851D002536A8 /* main.swift in Sources */,
