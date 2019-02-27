@@ -25,6 +25,7 @@
 		20CFA67F220C193F0009B21C /* 200-NumIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA67E220C193F0009B21C /* 200-NumIslands.swift */; };
 		20CFA681220C39480009B21C /* 51-SolveNQueens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA680220C39480009B21C /* 51-SolveNQueens.swift */; };
 		20CFA76B220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */; };
+		20DBAED8222626C80020D378 /* 695-MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAED7222626C80020D378 /* 695-MaxAreaOfIsland.swift */; };
 		20DC97A0221E4F7C00D3FC7C /* 131-Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC979F221E4F7C00D3FC7C /* 131-Partition.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		20CFA67E220C193F0009B21C /* 200-NumIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "200-NumIslands.swift"; sourceTree = "<group>"; };
 		20CFA680220C39480009B21C /* 51-SolveNQueens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "51-SolveNQueens.swift"; sourceTree = "<group>"; };
 		20CFA76A220B1A7D00E87C95 /* 93-RestoreIpAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "93-RestoreIpAddresses.swift"; sourceTree = "<group>"; };
+		20DBAED7222626C80020D378 /* 695-MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "695-MaxAreaOfIsland.swift"; sourceTree = "<group>"; };
 		20DC979F221E4F7C00D3FC7C /* 131-Partition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "131-Partition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				20CFA67E220C193F0009B21C /* 200-NumIslands.swift */,
 				20AB66942221151B00EE033D /* 130-Solve.swift */,
 				20AD5A03222270AB00E81BEE /* 417-PacificAtlantic.swift */,
+				20DBAED7222626C80020D378 /* 695-MaxAreaOfIsland.swift */,
 				20CFA680220C39480009B21C /* 51-SolveNQueens.swift */,
 				20AB6696222131D800EE033D /* 37-SolveSudoku.swift */,
 			);
@@ -185,6 +188,7 @@
 				209F9261221FA5EA00EA3529 /* 216-CombinationSum3.swift in Sources */,
 				202FBE8021CDCCD0009308F3 /* main.swift in Sources */,
 				20AB6697222131D800EE033D /* 37-SolveSudoku.swift in Sources */,
+				20DBAED8222626C80020D378 /* 695-MaxAreaOfIsland.swift in Sources */,
 				20A152FF21CFB20500B7CAA8 /* 79-WordSearch.swift in Sources */,
 				2017B06721CE392C00AA6FB6 /* 46-Permutations.swift in Sources */,
 				20DC97A0221E4F7C00D3FC7C /* 131-Partition.swift in Sources */,

@@ -36,7 +36,7 @@ class PacificAtlantic {
     
     private var resultsMatrix = [[Bool]]()
     private var visited = Array<Array<Bool>>()
-    private var d = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+    private var d = [[0, 1], [1, 0], [0, -1], [-1, 0]]
     
     func pacificAtlantic(_ matrix: [[Int]]) -> [[Int]] {
         if matrix.count == 0 || matrix[0].count == 0 {
