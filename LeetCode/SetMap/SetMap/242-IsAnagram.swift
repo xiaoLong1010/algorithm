@@ -19,6 +19,39 @@
 import Foundation
 
 class IsAnagram {
+    func isAnagram(_ s: String, _ t: String) -> Bool {
+        let length = s.count
+        if t.count != length {
+            return false
+        }
+        
+        // 转换成字符数组
+        let sChars = Array(s)
+        let tChars = Array(t)
+        
+        // 记录字符的个数
+        var counter1 = Dictionary<Character, Int>()
+        var counter2 = Dictionary<Character, Int>()
+        for i in 0..<length {
+            let c1 = sChars[i]
+            let c2 = tChars[i]
+            
+            self.addChar(&counter1, c1)
+            self.addChar(&counter2, c2)
+        }
+        
+        return counter1 == counter2
+    }
+    
+    func addChar(_ info: inout Dictionary<Character, Int>, _ c: Character) -> Void {
+        if let count = info[c] {
+            info[c] = count + 1
+        }
+        else {
+            info[c] = 1
+        }
+    }
+    
     func solution1(_ s: String, _ t: String) -> Bool {
         // 转换成字符数组
         let sChars = Array(s)

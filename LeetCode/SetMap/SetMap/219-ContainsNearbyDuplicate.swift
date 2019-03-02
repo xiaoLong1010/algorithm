@@ -6,6 +6,18 @@
 //  Copyright © 2019 CXL. All rights reserved.
 //
 
+/**
+ 给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。
+ 
+ 输入: nums = [1,2,3,1], k = 3
+ 输出: true
+ 
+ 思路
+    1 使用Set保存数字，并且Set最多装k个数字
+    2 如果有相同的，方法结束
+    3 否则，插入到Set中之后，判断Set中元素的数量，如果超了，就把第一个删除。顺序是由原数组记录的
+ */
+
 import Foundation
 
 class ContainsNearbyDuplicate {

@@ -32,6 +32,7 @@ class MaxPoints {
             var sameCount = 0
             var tempMax = 0
             
+            // 穿过i的所有直线，求一个最大的
             for j in i+1..<length {
                 var x = points[j].x - points[i].x
                 var y = points[j].y - points[i].y
@@ -63,6 +64,7 @@ class MaxPoints {
         return maxCount
     }
     
+    // a和b的最大公约数
     func maxDivisor(_ a: Int, _ b: Int) -> Int {
         if b == 0 {
             return a

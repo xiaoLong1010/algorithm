@@ -32,24 +32,22 @@ class WordPattern {
         
         // 一个模式字符，对应一个字符串
         var patternInfo = Dictionary<Character, String>()
-        var wordSet = Set<String>()
         for i in 0..<count {
             let patternChar = patterns[i]
 
-            if let targetString = patternInfo[patternChar] {
-                if targetString != words[i] {
+            if let targetWord = patternInfo[patternChar] {
+                if targetWord != words[i] {
                     return false
                 }
             } else {
                 // 单词不能已经被用过
                 let word = words[i]
-                if wordSet.contains(word) {
+                if patternInfo.values.contains(word) {
                     return false
                 }
                 
                 // 将单词保存起来
                 patternInfo[patternChar] = word
-                wordSet.insert(word)
             }
         }
         return true
