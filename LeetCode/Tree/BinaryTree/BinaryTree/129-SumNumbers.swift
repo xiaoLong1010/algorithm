@@ -13,6 +13,7 @@ class SumNumbers {
         return self.sumNumbersCore(root,0)
     }
     
+    // 返回值以root为根的树的和，result表示之前的结果
     func sumNumbersCore(_ root: TreeNode?, _ result: Int) -> Int {
         if root == nil {
             return 0
@@ -23,7 +24,7 @@ class SumNumbers {
         
         // 如果是叶子结点，就计算这条路径的最终结果了
         if root?.left == nil && root?.right == nil {
-            return result * 10 + rootVal
+            return sum
         }
         
         // 加上左边结果和右边结果
