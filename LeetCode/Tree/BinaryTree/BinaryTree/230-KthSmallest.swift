@@ -6,6 +6,10 @@
 //  Copyright © 2019 CXL. All rights reserved.
 //
 
+/**
+ 给定一个二叉搜索树，编写一个函数 kthSmallest 来查找其中第 k 个最小的元素。
+ */
+
 import Foundation
 
 class KthSmallest {
@@ -15,7 +19,8 @@ class KthSmallest {
     private var canStop = false
     
     func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
-        self.inOrder(root, k)
+        var count = 0
+        self.inOrder2(root, k, &count)
         
         return self.targetValue
     }
@@ -60,5 +65,23 @@ class KthSmallest {
             return
         }
         self.inOrder(root?.right, k)
+    }
+    
+    func inOrder2(_ root: TreeNode?, _ target: Int, _ count: inout Int) -> Void {
+        if root == nil {
+            return
+        }
+        
+        self.inOrder2(root?.left, target, &count)
+        
+        count += 1
+        if count == target {
+            self.targetValue = root!.val
+            return
+        } else if count > target {
+            return
+        }
+        
+        self.inOrder2(root?.right, target, &count)
     }
 }
