@@ -18,7 +18,7 @@ class InvertTree {
             return nil
         }
         
-        // 先反转左子树和又子树
+        // 先反转左子树和右子树
         _ = self.invertTree(root?.left)
         _ = self.invertTree(root?.right)
         
