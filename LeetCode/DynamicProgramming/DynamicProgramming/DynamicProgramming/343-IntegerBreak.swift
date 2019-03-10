@@ -7,12 +7,11 @@
 //
 
 /**
- 给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
+给定一个正整数 n，将其拆分为至少两个正整数的和，并使这些整数的乘积最大化。 返回你可以获得的最大乘积
  
- 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
- 
- 输入："23"
- 输出：["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+ 输入: 10
+ 输出: 36
+ 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
  
  */
 
@@ -79,7 +78,7 @@ class IntegerBreak {
             for j in 1...(i-1) {
                 let temp1 = j * (i-j) // 不再进行分解，直接求乘积
                 let temp2 = j * self.historyList[i-j] // 直接取保存的最大值
-                self.historyList[i] = self.maxWith(num1: temp1, num2: temp2, num3: self.historyList[i]) // 更新i的最大值
+                self.historyList[i] = max(temp1, temp2, self.historyList[i])
             }
         }
         return self.historyList[num]

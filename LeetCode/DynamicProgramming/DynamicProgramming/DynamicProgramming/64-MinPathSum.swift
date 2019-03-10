@@ -35,6 +35,7 @@ class MinPathSum {
                 if j == 0 {
                     dp[j] += grid[i][0]
                 } else {
+                    // dp[j]表示到[i-1,j]的最小值，dp[j-1]表示到[i,j-1]的最小值
                     dp[j] = min(dp[j], dp[j - 1]) + grid[i][j]
                 }
             }
