@@ -16,13 +16,48 @@
  输入: coins = [2], amount = 3
  输出: -1
  
- 
+ 思路1
  dp[i]表示凑成金额i，最小需要的硬币个数
+ 
+ 思路2
+ dp[i][j],表示区间[0,j]的硬币，组成i的最小硬币个数
+ dp[i][j]=min(dp[i][j-1],dp[i-v(i)][j]+1)
  
  */
 import Foundation
 
 class CoinChange {
+    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+        let coinCount = coins.count
+        if coinCount == 0 || amount < 0 {
+            return -1
+        }
+        if amount == 0 {
+            return 0
+        }
+        
+        // 初始化
+        let maxAmount = amount+1
+        let oneRow = Array(repeating: maxAmount, count: coins.count)
+        var dp = Array(repeating: oneRow, count: amount+1)
+        dp[0][0] = 0
+        
+        for i in 0...amount {
+            for j in 0..<coinCount {
+                let coinNum = coins[j]
+                if i >= coinNum && j >= 1 {
+                    dp[i][j] = min(dp[i][j-1], dp[i-coinNum][j]+1)
+                } else if i >= coinNum {
+                    dp[i][j] = min(dp[i][j], dp[i-coinNum][j]+1)
+                } else if j >= 1 {
+                    dp[i][j] = min(dp[i][j], dp[i][j-1])
+                }
+            }
+        }
+        
+        return dp[amount][coinCount-1] == maxAmount ? -1 : dp[amount][coinCount-1]
+    }
+    
     func solution1(_ coins: [Int], _ amount: Int) -> Int {
         let maxSum = amount+1
         var dp = Array(repeating: maxSum, count: amount+1)

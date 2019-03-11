@@ -24,9 +24,9 @@ class Knapsack {
         let oneRow = Array(repeating: 0, count: maxCapacity+1)
         var dp = Array(repeating: oneRow, count: length)
         // 初始化第一行数据
-        for index in 0...maxCapacity {
-            if weights[0] <= index {
-                dp[0][index] = values[0]
+        for capacity in 0...maxCapacity {
+            if weights[0] <= capacity {
+                dp[0][capacity] = values[0]
             }
         }
         

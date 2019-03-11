@@ -8,6 +8,16 @@
 
 import Foundation
 
+func test322() -> Void {
+    let answer  = CoinChange()
+    let nums = [1]
+    let sum = 1
+    
+    let result1 = answer.coinChange(nums, sum)
+    print("result1 :" ,result1)
+}
+//test322()
+
 func test494() -> Void {
     let answer  = FindTargetSumWays()
     let nums = [1, 1, 1, 1, 1]
@@ -16,7 +26,7 @@ func test494() -> Void {
     let result1 = answer.findTargetSumWays([1000],-1000)
     print("result1 :" ,result1)
 }
-test494()
+//test494()
 
 func test139() -> Void {
     let answer  = WordBreak()
@@ -95,10 +105,10 @@ func testLCS2() -> Void {
 
 func testLPS() -> Void {
     let lps = LongestPalindromicSubstring()
-    let result1 = lps.solution1("abbacdeedc")
+    let result1 = lps.longestPalindrome("abbacdeedc")
     print(result1)
 }
-//testLPS()
+testLPS()
 
 func testLCS() -> Void {
     let lcs  = LongestCommonSubsequence()

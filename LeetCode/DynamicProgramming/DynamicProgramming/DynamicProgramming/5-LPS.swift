@@ -17,8 +17,53 @@ import Foundation
  dp[i][j] = (str[i]=str[j])&&dp[i+1][j-1], 如果j-i>1,
  */
 class LongestPalindromicSubstring {
+    func longestPalindrome(_ str: String) -> String {
+        let length = str.count
+        if length <= 1 {
+            return str
+        }
+        let firstIndex = str.startIndex
+        var startIndex = str.startIndex
+        var maxLength = 1
+        
+        for i in 1...length-1 {
+            // 奇数扩展
+            if i - maxLength - 1 >= 0 {
+                let index1 = str.index(firstIndex, offsetBy: i-maxLength-1)
+                let index2 = str.index(firstIndex, offsetBy: i)
+                let subStr = str[index1...index2]
+                
+                if String(subStr) == String(subStr.reversed()) {
+                    startIndex = index1
+                    maxLength += 2
+                    continue
+                }
+            }
+            
+            // 偶数扩展
+            if i - maxLength >= 0 {
+                let index1 = str.index(firstIndex, offsetBy: i-maxLength)
+                let index2 = str.index(firstIndex, offsetBy: i)
+                let subStr = str[index1...index2]
+                if String(subStr) == String(subStr.reversed()) {
+                    startIndex = index1
+                    maxLength += 1
+                }
+            }
+        }
+        
+        let result = str[startIndex..<str.index(startIndex, offsetBy: maxLength)]
+        return String(result)
+    }
+    
+    // 时间超时
     func solution1(_ str: String) -> String {
         let length = str.count
+        if length <= 1 {
+            return str
+        }
+        
+        
         var startIndex = str.startIndex
         var maxLength = 1
         

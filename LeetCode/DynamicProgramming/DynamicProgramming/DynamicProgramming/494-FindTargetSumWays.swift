@@ -23,7 +23,8 @@
  
  一共有5种方法让最终目标和为3。
  
- dp[i][j],表示[0...i]个数，组成j-maxSum的的方法数
+ 思路1
+ dp[i][j],表示[0...i]个数，组成j(或者j-maxSum)的的方法数
  dp[i][j] = dp[i-1][j-v[i]] + dp[i-1][j+v[i]]
  
  思路2
@@ -52,7 +53,7 @@ class FindTargetSumWays {
         // 新的sum
         let target = (S + maxSum) >> 1
         
-        // dp[i]表示组成i的个数。初始化相当于nums为空数组
+        // dp[i]表示，和等于i的方法数
         var dp = Array(repeating: 0, count: target+1)
         dp[0] = 1
         
