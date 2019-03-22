@@ -29,7 +29,7 @@ class ReverseBetween {
         let dummy = ListNode(0)
         dummy.next = head
         
-        // pre是在m前一个位置的结点
+        // pre是在m前一个位置的结点，并且是固定不动
         // pre的next一直指向变换的头结点
         var pre: ListNode? = dummy
         for _ in 1..<m {
