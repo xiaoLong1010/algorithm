@@ -26,7 +26,7 @@ class SimplifyPath {
             if str == "." || str == ""{
                 
             } else if str == ".." {
-                stack.popLast()
+                _ = stack.popLast()
             } else {
                 stack.append(str)
             }
