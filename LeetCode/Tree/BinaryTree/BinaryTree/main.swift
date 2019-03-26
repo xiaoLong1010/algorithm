@@ -28,6 +28,31 @@ class BinaryTreeNode {
     }
 }
 
+func test236() -> Void {
+    let node0 = TreeNode(0)
+    let node1 = TreeNode(1)
+    let node2 = TreeNode(2)
+    let node3 = TreeNode(3)
+    let node4 = TreeNode(4)
+    let node5 = TreeNode(5)
+    let node6 = TreeNode(6)
+    let node7 = TreeNode(7)
+    let node8 = TreeNode(8)
+    node3.left = node5
+    node3.right = node1
+    node5.left = node6
+    node5.right = node2
+    node1.left = node0
+    node1.right = node8
+    node2.left = node7
+    node2.right = node4
+
+    let answer = LowestCommonAncestor()
+    let result = answer.lowestCommonAncestor2(node3, node2, node1)
+    print(result ?? "none")
+}
+test236()
+
 
 // 104 二叉树的最大深度
 // 111 二叉树的最小深度
