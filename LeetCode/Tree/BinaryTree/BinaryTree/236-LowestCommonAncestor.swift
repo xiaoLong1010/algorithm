@@ -68,6 +68,27 @@ class LowestCommonAncestor {
         return resultNode
     }
     
+    func lowestCommonAncestor3(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        if !(root != nil && p != nil && q != nil) {
+            return nil
+        }
+        
+        if root === p || root === q {
+            return root
+        }
+        
+        let left = self.lowestCommonAncestor3(root?.left, p, q)
+        let right = self.lowestCommonAncestor3(root?.right, p, q)
+        
+        if left != nil && right != nil {        // p 和 q在左右子树
+            return root
+        } else if left != nil {
+            return left
+        } else {
+            return right
+        }
+    }
+    
     // root为根的树，是否包含p和q两个结点
     func contain(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> Bool {
         if root == nil {
