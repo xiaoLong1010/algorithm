@@ -8,12 +8,19 @@
 
 import Foundation
 
+func test42() -> Void {
+    let answer = Trap()
+    let result = answer.trap([4,2,3])
+    print("result:", result)
+}
+test42()
+
 func test128() -> Void {
     let answer = LongestConsecutive()
     let result = answer.longestConsecutive2([100,4,200,1,3,2])
     print("result:", result)
 }
-test128()
+//test128()
 
 func test76() -> Void {
     let answer = MinWindow()
