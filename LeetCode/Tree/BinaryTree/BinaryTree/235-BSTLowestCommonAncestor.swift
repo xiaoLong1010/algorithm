@@ -1,8 +1,8 @@
 //
-//  235-LowestCommonAncestor.swift
+//  235-BSTLowestCommonAncestor.swift
 //  BinaryTree
 //
-//  Created by Csy on 2019/2/16.
+//  Created by Csy on 2019/3/26.
 //  Copyright © 2019 CXL. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 
 import Foundation
 
-class LowestCommonAncestor {
-    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+class BSTLowestCommonAncestor {
+    func BSTLowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         if !(root != nil && p != nil && q != nil) {
             return nil
         }
@@ -24,12 +24,12 @@ class LowestCommonAncestor {
         
         // 两个结点小于root，那公共结点就在左边
         if rootValue > value1 && rootValue > value2  {
-            return lowestCommonAncestor(root?.left, p, q)
+            return BSTLowestCommonAncestor(root?.left, p, q)
         }
         
         // 两个结点大于root，那公共结点就在右边
         if rootValue < value1 && rootValue < value2  {
-            return lowestCommonAncestor(root?.right, p, q)
+            return BSTLowestCommonAncestor(root?.right, p, q)
         }
         
         return root
