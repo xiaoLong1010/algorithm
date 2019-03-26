@@ -45,6 +45,29 @@ class LowestCommonAncestor {
         return resultNode
     }
     
+    func lowestCommonAncestor2(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        if !(root != nil && p != nil && q != nil) {
+            return nil
+        }
+        
+        var nodes1 = [TreeNode?]()
+        var nodes2 = [TreeNode?]()
+        
+        _ = self.path(from: root, to: p, &nodes1)
+        _ = self.path(from: root, to: q, &nodes2)
+        
+        var resultNode: TreeNode? = nil
+        let length = min(nodes1.count, nodes2.count)
+        for i in 0..<length {
+            if nodes1[i] === nodes2[i] {
+                resultNode = nodes1[i]
+            } else {
+                break
+            }
+        }
+        return resultNode
+    }
+    
     // root为根的树，是否包含p和q两个结点
     func contain(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> Bool {
         if root == nil {
@@ -70,5 +93,25 @@ class LowestCommonAncestor {
         }
         
         return containCount == 2
+    }
+    
+    func path(from node1: TreeNode?, to node2: TreeNode?, _ nodes: inout [TreeNode?]) -> Bool {
+        if node1 == nil || node2 == nil {
+            return false
+        }
+        
+        if node1 === node2 {
+            return true
+        }
+        
+        nodes.append(node1);
+        if self.path(from: node1?.left, to: node2, &nodes) {
+            return true
+        }
+        if self.path(from: node1?.right, to: node2, &nodes) {
+            return true
+        }
+        nodes.removeLast()
+        return false
     }
 }
