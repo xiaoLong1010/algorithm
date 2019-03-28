@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20024F27224C7CE600158E36 /* 221-MaximalSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20024F26224C7CE600158E36 /* 221-MaximalSquare.swift */; };
 		20047EF721D1F77200EF4014 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EF621D1F77200EF4014 /* main.swift */; };
 		20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */; };
 		20092489221B951C001082A9 /* 377-CombinationSum4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20092488221B951C001082A9 /* 377-CombinationSum4.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20024F26224C7CE600158E36 /* 221-MaximalSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "221-MaximalSquare.swift"; sourceTree = "<group>"; };
 		20047EF321D1F77200EF4014 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		20047EF621D1F77200EF4014 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		20047EFD21D1F7A700EF4014 /* 343-IntegerBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "343-IntegerBreak.swift"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				206AC04221D5C41400208E65 /* LCS.swift */,
 				20E0422321DC7A2D007FCF73 /* 5-LPS.swift */,
 				20B0EC9D2249BFE8007F1742 /* 53-MaxSubArray.swift */,
+				20024F26224C7CE600158E36 /* 221-MaximalSquare.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				20092489221B951C001082A9 /* 377-CombinationSum4.swift in Sources */,
 				203D632921D324CF0050A577 /* Knapsack.swift in Sources */,
 				203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */,
+				20024F27224C7CE600158E36 /* 221-MaximalSquare.swift in Sources */,
 				20B0EC9E2249BFE8007F1742 /* 53-MaxSubArray.swift in Sources */,
 				20047EFE21D1F7A700EF4014 /* 343-IntegerBreak.swift in Sources */,
 				20A8EF4C221A4D0800759931 /* 337-Rob3.swift in Sources */,
