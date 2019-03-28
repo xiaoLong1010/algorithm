@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20024F21224C5FC600158E36 /* 56-IntervalMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20024F20224C5FC600158E36 /* 56-IntervalMerge.swift */; };
 		200FFE2B21FAA9D400116F27 /* 88-Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FFE2A21FAA9D400116F27 /* 88-Merge.swift */; };
 		200FFE2D21FAB77D00116F27 /* 215-FindKthLargest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FFE2C21FAB77D00116F27 /* 215-FindKthLargest.swift */; };
 		2017F8F921E2ACE900C7AFB3 /* 167-TwoSum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017F8F821E2ACE900C7AFB3 /* 167-TwoSum2.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20024F20224C5FC600158E36 /* 56-IntervalMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "56-IntervalMerge.swift"; sourceTree = "<group>"; };
 		200FFE2A21FAA9D400116F27 /* 88-Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88-Merge.swift"; sourceTree = "<group>"; };
 		200FFE2C21FAB77D00116F27 /* 215-FindKthLargest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "215-FindKthLargest.swift"; sourceTree = "<group>"; };
 		2017F8F821E2ACE900C7AFB3 /* 167-TwoSum2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167-TwoSum2.swift"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				20AB166E2248987800DF21F8 /* 60-GetPermutation.swift */,
 				20AB16702248A5C500DF21F8 /* 547-FindCircleNum.swift */,
 				20AB16722248AA3C00DF21F8 /* 42-Trap.swift */,
+				20024F20224C5FC600158E36 /* 56-IntervalMerge.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				20AB16712248A5C500DF21F8 /* 547-FindCircleNum.swift in Sources */,
 				20399D1421F81CEC00E98B7A /* 169-MajorityElement.swift in Sources */,
 				2077A94B2226D7A60038DF0D /* 128-LongestConsecutive.swift in Sources */,
+				20024F21224C5FC600158E36 /* 56-IntervalMerge.swift in Sources */,
 				2077A949222653840038DF0D /* 674-FindLengthOfLCIS.swift in Sources */,
 				20A78D1421F980C6008F2D71 /* 80-RemoveDulicatesTwo.swift in Sources */,
 				20E523D621E1EDC40057EC76 /* 283-MoveZeros.swift in Sources */,
