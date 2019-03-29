@@ -71,7 +71,7 @@ class LongestIncreaseSubsequence {
                 dpMaxIndex += 1
                 dp[dpMaxIndex] = newNum
             } else {
-                // 0-dpMaxIndex,找到大于等于target的第一个元素所在的索引
+                // 0-dpMaxIndex,找到大于等于newNum的第一个元素所在的索引
                 let index = self.search(dp, maxIndex: dpMaxIndex, target: newNum)
                 dp[index] = newNum
             }
