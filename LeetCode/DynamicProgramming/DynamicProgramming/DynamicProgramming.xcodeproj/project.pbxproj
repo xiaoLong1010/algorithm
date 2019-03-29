@@ -15,6 +15,7 @@
 		202AC42521D465F700C26052 /* 300-LIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AC42421D465F700C26052 /* 300-LIS.swift */; };
 		203D632721D318100050A577 /* 198-HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632621D318100050A577 /* 198-HouseRobber.swift */; };
 		203D632921D324CF0050A577 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D632821D324CF0050A577 /* Knapsack.swift */; };
+		20436ECA224E00060023C8D3 /* 354-MaxEnvelopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20436EC9224E00050023C8D3 /* 354-MaxEnvelopes.swift */; };
 		20609F882234E65700E92BD6 /* 121-MaxProfit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609F872234E65700E92BD6 /* 121-MaxProfit1.swift */; };
 		20609F8A2234FEA000E92BD6 /* 122-MaxProfit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609F892234FEA000E92BD6 /* 122-MaxProfit2.swift */; };
 		20609F8C2235006900E92BD6 /* 123-MaxProfit3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20609F8B2235006800E92BD6 /* 123-MaxProfit3.swift */; };
@@ -61,6 +62,7 @@
 		202AC42421D465F700C26052 /* 300-LIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300-LIS.swift"; sourceTree = "<group>"; };
 		203D632621D318100050A577 /* 198-HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "198-HouseRobber.swift"; sourceTree = "<group>"; };
 		203D632821D324CF0050A577 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
+		20436EC9224E00050023C8D3 /* 354-MaxEnvelopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "354-MaxEnvelopes.swift"; sourceTree = "<group>"; };
 		20609F872234E65700E92BD6 /* 121-MaxProfit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "121-MaxProfit1.swift"; sourceTree = "<group>"; };
 		20609F892234FEA000E92BD6 /* 122-MaxProfit2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "122-MaxProfit2.swift"; sourceTree = "<group>"; };
 		20609F8B2235006800E92BD6 /* 123-MaxProfit3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "123-MaxProfit3.swift"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				20E39D78221D378100DA9EA2 /* 494-FindTargetSumWays.swift */,
 				20DC979D221E3AE700D3FC7C /* 416-CanPartition.swift */,
 				202AC42421D465F700C26052 /* 300-LIS.swift */,
+				20436EC9224E00050023C8D3 /* 354-MaxEnvelopes.swift */,
 				206AC04221D5C41400208E65 /* LCS.swift */,
 				20E0422321DC7A2D007FCF73 /* 5-LPS.swift */,
 				20B0EC9D2249BFE8007F1742 /* 53-MaxSubArray.swift */,
@@ -228,6 +231,7 @@
 				20609F8E2235060A00E92BD6 /* 124-MaxProfit4.swift in Sources */,
 				2009248B221BA88D001082A9 /* 474-FindMaxForm.swift in Sources */,
 				20A8EF50221A84A400759931 /* 309-MaxProfit.swift in Sources */,
+				20436ECA224E00060023C8D3 /* 354-MaxEnvelopes.swift in Sources */,
 				20E39D79221D378100DA9EA2 /* 494-FindTargetSumWays.swift in Sources */,
 				206F015D22197D59002E067D /* 62-UniquePaths.swift in Sources */,
 				20C267892212C26000247F0E /* 322-CoinChange.swift in Sources */,
