@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200949F922506B3D00F9B467 /* 392-IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200949F822506B3D00F9B467 /* 392-IsSubsequence.swift */; };
 		2039D17021DDB8C400F91B99 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039D16F21DDB8C400F91B99 /* main.swift */; };
 		2039D17721DDB91400F91B99 /* 455-AssignCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039D17621DDB91400F91B99 /* 455-AssignCookies.swift */; };
 		20AD586B21DDCFDE0048056D /* 435-NonOverlappingIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD586A21DDCFDE0048056D /* 435-NonOverlappingIntervals.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		200949F822506B3D00F9B467 /* 392-IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "392-IsSubsequence.swift"; sourceTree = "<group>"; };
 		2039D16C21DDB8C400F91B99 /* Greedy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Greedy; sourceTree = BUILT_PRODUCTS_DIR; };
 		2039D16F21DDB8C400F91B99 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2039D17621DDB91400F91B99 /* 455-AssignCookies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "455-AssignCookies.swift"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				2039D16F21DDB8C400F91B99 /* main.swift */,
 				2039D17621DDB91400F91B99 /* 455-AssignCookies.swift */,
+				200949F822506B3D00F9B467 /* 392-IsSubsequence.swift */,
 				20AD586A21DDCFDE0048056D /* 435-NonOverlappingIntervals.swift */,
 			);
 			path = Greedy;
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200949F922506B3D00F9B467 /* 392-IsSubsequence.swift in Sources */,
 				20AD586B21DDCFDE0048056D /* 435-NonOverlappingIntervals.swift in Sources */,
 				2039D17021DDB8C400F91B99 /* main.swift in Sources */,
 				2039D17721DDB91400F91B99 /* 455-AssignCookies.swift in Sources */,
@@ -252,18 +256,30 @@
 		2039D17421DDB8C400F91B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		2039D17521DDB8C400F91B99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
