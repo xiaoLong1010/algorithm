@@ -26,44 +26,61 @@ class LRUCache {
     private var head: LRUNode?
     private var tail: LRUNode?
     
+    private var mutex: pthread_mutex_t = pthread_mutex_t()
+    
     init(_ capacity: Int) {
         self.capacity = capacity
         self.map = Dictionary<Int, LRUNode>()
+        pthread_mutex_init(&self.mutex, nil)
+    }
+    
+    deinit {
+        pthread_mutex_destroy(&self.mutex);
     }
     
     func get(_ key: Int) -> Int {
+        var result = -1
+        
+        pthread_mutex_lock(&self.mutex)
         if let node = self.map[key] {
             self.bringNodeToFront(node)
-            return node.value
-        } else {
-            return -1
+            result = node.value
         }
+        pthread_mutex_unlock(&self.mutex)
+        
+        return result
     }
     
     func put(_ key: Int, _ value: Int) {
+        pthread_mutex_lock(&self.mutex)
         if let node = self.map[key] {
             node.value = value
             self.bringNodeToFront(node)
         } else {
             self.insertNodeToFront(key, value)
         }
+        pthread_mutex_unlock(&self.mutex)
     }
     
     private func bringNodeToFront(_ node: LRUNode) -> Void {
-        // 已经是头结点
-        if node.pre == nil {
+        // 如果是头结点
+        if node === self.head {
             return
         }
         
-        // 获取当前结点的前后结点
-        let preNode = node.pre
-        let nextNode = node.next
-        
-        // 将当前结点从链表从移除
-        preNode?.next = nextNode
-        nextNode?.pre = preNode
-        if self.tail === node {
-            self.tail = preNode
+        // 移除当前结点
+        if node !== self.tail {
+            // 获取当前结点的前后结点
+            let preNode = node.pre
+            let nextNode = node.next
+            
+            // 将当前结点从链表从移除
+            preNode?.next = nextNode
+            nextNode?.pre = preNode
+        }
+        else {
+            self.tail = self.tail?.pre
+            self.tail?.next = nil
         }
         
         // 将当前结点插入到头部
