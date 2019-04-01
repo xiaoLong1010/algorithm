@@ -8,6 +8,44 @@
 
 import Foundation
 
+
+func test432() -> Void {
+    var all = AllOne()
+    
+    /**
+     ["AllOne","inc","inc","inc","dec","inc","inc","getMaxKey","dec","dec","dec","getMaxKey"]
+     [[],["hello"],["world"],["hello"],["world"],["hello"],["leet"],[],["hello"],["hello"],["hello"],[]]
+     
+     */
+    all.inc("hello")
+    all.inc("world")
+    all.inc("hello")
+    all.dec("world")
+    all.inc("hello")
+    all.inc("leet")
+    all.getMaxKey()
+    all.dec("hello")
+    all.dec("hello")
+    all.dec("hello")
+    all.getMaxKey()
+    var res = all.getMaxKey()
+    res = all.getMinKey()
+    
+
+}
+test432()
+
+func test146() -> Void {
+    var cache = LRUCache( 2 /* 缓存容量 */ );
+    
+    cache.put(1, 1);
+    cache.put(2, 2);
+    cache.get(1);       // 返回  1
+    cache.put(3, 3);    // 该操作会使得密钥 2 作废
+    cache.get(2);       // 返回 -1 (未找到)
+}
+test146()
+
 func test149() -> Void {
     let answer = MaxPoints()
     
@@ -15,7 +53,7 @@ func test149() -> Void {
     let result = answer.solution1([Point(0,0), Point(0,0)])
     print(result)
 }
-test149()
+//test149()
 
 func test49() -> Void {
     let answer = GroupAnagrams()
