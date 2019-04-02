@@ -48,7 +48,7 @@ func test236() -> Void {
     node2.right = node4
 
     let answer = LowestCommonAncestor()
-    let result = answer.lowestCommonAncestor2(node3, node2, node1)
+    let result = answer.lowestCommonAncestor3(node3, node1, node8)
     print(result ?? "none")
 }
 test236()
