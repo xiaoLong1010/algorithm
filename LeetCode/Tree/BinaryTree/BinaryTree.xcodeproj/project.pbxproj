@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2013B1A72260E21900E7AFB0 /* 105-BuildTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013B1A62260E21900E7AFB0 /* 105-BuildTree.swift */; };
 		201528D02217E115006CBAC9 /* 450-DeleteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201528CF2217E115006CBAC9 /* 450-DeleteNode.swift */; };
 		201528D22217FED5006CBAC9 /* 108-SortedArrayToBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201528D12217FED5006CBAC9 /* 108-SortedArrayToBST.swift */; };
 		201528D4221803C7006CBAC9 /* 230-KthSmallest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201528D3221803C7006CBAC9 /* 230-KthSmallest.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2013B1A62260E21900E7AFB0 /* 105-BuildTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "105-BuildTree.swift"; sourceTree = "<group>"; };
 		201528CF2217E115006CBAC9 /* 450-DeleteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "450-DeleteNode.swift"; sourceTree = "<group>"; };
 		201528D12217FED5006CBAC9 /* 108-SortedArrayToBST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "108-SortedArrayToBST.swift"; sourceTree = "<group>"; };
 		201528D3221803C7006CBAC9 /* 230-KthSmallest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "230-KthSmallest.swift"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				201528CF2217E115006CBAC9 /* 450-DeleteNode.swift */,
 				201528D12217FED5006CBAC9 /* 108-SortedArrayToBST.swift */,
 				201528D3221803C7006CBAC9 /* 230-KthSmallest.swift */,
+				2013B1A62260E21900E7AFB0 /* 105-BuildTree.swift */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				208DB9B6221668610061CD9A /* 222-CountNodes.swift in Sources */,
+				2013B1A72260E21900E7AFB0 /* 105-BuildTree.swift in Sources */,
 				208DB9B222165D1D0061CD9A /* 100-IsSameTree.swift in Sources */,
 				207500C821C31AB700A63E0E /* BinarySearchTree.swift in Sources */,
 				208DB9B4221661C60061CD9A /* 101-IsSymmetric.swift in Sources */,
